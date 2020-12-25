@@ -1,0 +1,50 @@
+{
+  "name": "@alexlit/config-stylelint",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Stylelint config",
+  "keywords": [
+    "stylelint",
+    "config"
+  ],
+  "homepage": "https://github.com/alex-lit/config-stylelint#readme",
+  "bugs": {
+    "url": "https://github.com/alex-lit/config-stylelint/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex-lit/config-stylelint.git"
+  },
+  "license": "MIT",
+  "author": "Alexey Litovchenko",
+  "maintainers": [
+    {
+      "name": "Alexey Litovchenko",
+      "email": "alex.lit@outlook.com",
+      "url": "https://alexlit.gitlab.io"
+    }
+  ],
+  "main": "stylelint.config.js",
+  "files": [
+    "stylelint.config.js"
+  ],
+  "scripts": {
+    "semver": "./scripts/semver.sh",
+    "up": "./scripts/up.sh",
+    "version": "./scripts/version.sh"
+  },
+  "dependencies": {
+    "stylelint": "^13.8.0",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.18.0",
+    "stylelint-use-nesting": "^3.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "conventional-changelog-cli": "^2.1.1"
+  }
+}
