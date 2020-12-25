@@ -18,17 +18,14 @@
   "license": "MIT",
   "author": "Alexey Litovchenko",
   "maintainers": [
-    {
-      "name": "Alexey Litovchenko",
-      "email": "alex.lit@outlook.com",
-      "url": "https://alexlit.gitlab.io"
-    }
+    "Alexey Litovchenko <alex.lit@outlook.com> (https://alexlit.gitlab.io)"
   ],
   "main": "stylelint.config.js",
   "files": [
     "stylelint.config.js"
   ],
   "scripts": {
+    "publish": "./scripts/publish.sh",
     "semver": "./scripts/semver.sh",
     "up": "./scripts/up.sh",
     "version": "./scripts/version.sh"
