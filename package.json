@@ -20,9 +20,9 @@
   "maintainers": [
     "Alexey Litovchenko <alex.lit@outlook.com> (https://alexlit.gitlab.io)"
   ],
-  "main": "stylelint.config.js",
+  "main": ".stylelintrc.js",
   "files": [
-    "stylelint.config.js"
+    ".stylelintrc.js"
   ],
   "scripts": {
     "publish": "./scripts/publish.sh",
