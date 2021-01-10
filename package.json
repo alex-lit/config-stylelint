@@ -40,6 +40,6 @@
     "stylelint-use-nesting": "^3.0.0"
   },
   "devDependencies": {
-    "@alexlit/config-commitlint": "0.0.2"
+    "@alexlit/config-commitlint": "0.0.3"
   }
 }
