@@ -12,7 +12,7 @@ yarn-error.log*
 
 # Editor directories and files
 .idea
-.vscode
+__test__
 *.suo
 *.ntvs*
 *.njsproj

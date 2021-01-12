@@ -10,12 +10,11 @@ module.exports = {
     'storybook-static/**',
   ],
 
-  plugins: ['stylelint-prettier', 'stylelint-use-nesting', 'stylelint-scss'],
-
   extends: [
-    'stylelint-config-standard',
-    'stylelint-config-idiomatic-order',
-    'stylelint-config-prettier',
+    require.resolve('./configs/standard.js'),
+    require.resolve('./configs/scss.js'),
+    require.resolve('./configs/idiomatic-order.js'),
+    require.resolve('./configs/prettier.js'),
   ],
 
   rules: {
@@ -47,15 +46,5 @@ module.exports = {
     'selector-type-no-unknown': [true, { ignoreTypes: ['ymaps'] }],
     'string-no-newline': null,
     indentation: null,
-
-    // prettier
-    'prettier/prettier': true,
-
-    // scss
-    'scss/selector-nest-combinators': 'always',
-    'scss/selector-no-redundant-nesting-selector': null,
-
-    // use-nesting
-    'csstools/use-nesting': 'always',
   },
 };
