@@ -11,6 +11,10 @@ npm i @alexlit/config-stylelint -D
 ```js
 // .stylelintrc.js
 module.exports = {
-  extends: ["@alexlit/config-stylelint"],
+  extends: ['@alexlit/config-stylelint'],
+
+  ignoreFiles: [
+    ...require('@alexlit/config-stylelint/.stylelintrc.js').ignoreFiles,
+  ],
 };
 ```
