@@ -22,7 +22,8 @@
   ],
   "main": ".stylelintrc.js",
   "files": [
-    ".stylelintrc.js"
+    ".stylelintrc.js",
+    "configs/*"
   ],
   "scripts": {
     "lint": "./node_modules/@alexlit/lint-kit/scripts/lint.sh",
