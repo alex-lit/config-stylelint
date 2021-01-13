@@ -1,3 +1,12 @@
+# 0.1.0 (2021-01-12)
+
+
+### Features
+
+* **readme:** add title ([5a36c3d](https://github.com/alex-lit/config-stylelint/commit/5a36c3d123caae3897838d8dd521e1cbec3f604e))
+
+
+
 ## [0.0.10](https://github.com/alex-lit/config-stylelint/compare/v0.0.9...v0.0.10) (2021-01-12)
 
 
