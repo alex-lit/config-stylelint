@@ -44,6 +44,6 @@
     "stylelint-use-nesting": "^3.0.0"
   },
   "devDependencies": {
-    "@alexlit/lint-kit": "0.4.3"
+    "@alexlit/lint-kit": "0.5.0"
   }
 }
