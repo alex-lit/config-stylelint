@@ -23,7 +23,7 @@
   "main": ".stylelintrc.js",
   "files": [
     ".stylelintrc.js",
-    "configs/*"
+    "configs"
   ],
   "scripts": {
     "lint": "./node_modules/@alexlit/lint-kit/scripts/lint.sh",
