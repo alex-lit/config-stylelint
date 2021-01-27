@@ -29,6 +29,7 @@ module.exports = {
     'declaration-block-no-redundant-longhand-properties': null,
     'function-url-quotes': 'always',
     'no-descending-specificity': null,
+    'no-empty-source': null,
     'no-missing-end-of-source-newline': null,
     'number-leading-zero': 'always',
     'media-feature-name-no-unknown': [
