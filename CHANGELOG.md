@@ -1,3 +1,10 @@
+## [0.1.2](https://github.com/alex-lit/config-stylelint/compare/v0.1.1...v0.1.2) (2021-01-27)
+
+### Bug Fixes
+
+- disable no-empty-source rule
+  ([becf8d3](https://github.com/alex-lit/config-stylelint/commit/becf8d3259e3a46ace2f8e1bc2b82fe9fc87f128))
+
 ## [0.1.1](https://github.com/alex-lit/config-stylelint/compare/v0.0.10...v0.1.1) (2021-01-20)
 
 # 0.1.0 (2021-01-12)
