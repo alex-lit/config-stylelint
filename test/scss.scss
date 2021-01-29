@@ -1,333 +1,181 @@
 @mixin variables {
-  --ui-input-border-width: 1px;
-  --ui-input-height: 56px;
-  --ui-input-padding-x: 16px;
-  --ui-input-prefix-icon-size: 20px;
+  --ui-button-icon-size: calc(
+    var(--ui-button-font-size) * var(--ui-button-line-height)
+  );
+  --ui-icon-default-background-color: var(
+    --ui-button-color,
+    var(--ui-color-primary)
+  );
+  --ui-button-padding: 8px;
+  --ui-button-font-size: 16px;
+  --ui-button-line-height: 1.5;
+  --ui-button-color: currentColor;
+  --ui-button-color--h: currentColor;
+  --ui-button-color--p: currentColor;
 }
 
-.ui-input {
-  @extend .asfasfd;
-
+.ui-button {
   @include variables;
 
   position: relative;
+  display: inline-flex;
+  overflow: hidden;
+  height: var(--height);
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-items: center;
+  border: none;
+  appearance: none;
+  background-color: var(
+    --ui-button-color,
+    var(--ui-icon-default-background-color)
+  );
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  user-select: none;
 
-  &--prefix-icon-size {
-    &--small {
-      --ui-input-prefix-icon-size: 16px;
-    }
+  &:active,
+  &:focus {
+    background-color: var(
+      --ui-button-color--p,
+      var(--ui-icon-default-background-color)
+    );
+    outline: none;
+  }
 
-    &--default {
-      --ui-input-prefix-icon-size: 20px;
-    }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
 
-    &--large {
-      --ui-input-prefix-icon-size: 24px;
+    &:hover,
+    &:active {
+      background-color: var(--ui-button-color);
     }
+  }
+
+  &:hover {
+    background-color: var(
+      --ui-button-color--h,
+      var(--ui-icon-default-background-color)
+    );
+    text-decoration: none;
   }
 
   &--size {
     &--small {
-      --ui-input-height: 32px;
+      --ui-button-padding: 8px;
+      --ui-button-font-size: 14px;
+      --ui-button-line-height: 1.14;
     }
 
     &--default {
-      --ui-input-height: 40px;
+      --ui-button-padding: 8px;
+      --ui-button-font-size: 16px;
+      --ui-button-line-height: 1.5;
     }
 
     &--large {
-      --ui-input-height: 56px;
+      --ui-button-padding: 16px;
+      --ui-button-font-size: 20px;
+      --ui-button-line-height: 1.2;
     }
   }
 
-  &--mask {
-    &--2fa-code {
-      max-width: 304px;
+  &--color {
+    &--light,
+    &--white {
+      --ui-button-icon-size: calc(
+        var(--ui-button-font-size) * var(--ui-button-line-height) - 2px
+      );
 
-      @media ($mobile-l) {
-        max-width: 100%;
+      border: solid 1px var(--ui-color-input-border);
+      color: var(--ui-color-secondary);
+    }
+
+    &--link {
+      --ui-button-icon-size: calc(
+        var(--ui-button-font-size) * var(--ui-button-line-height) - 2px
+      );
+
+      border: solid 1px var(--ui-color-input-border);
+      background-color: transparent !important;
+      color: var(--ui-button-color);
+
+      &:active {
+        color: var(
+          --ui-button-color--p,
+          var(--ui-icon-default-background-color)
+        );
       }
-    }
-  }
-}
 
-.ui-input__label {
-  display: block;
-  min-height: 32px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 2.29;
-
-  & ::v-deep {
-    & .ui-hint {
-      margin-left: 4px;
-
-      & .ui-icon {
-        transform: translateY(2px);
-      }
-    }
-  }
-}
-
-.ui-input__field-wrap {
-  position: relative;
-  display: flex;
-}
-
-.ui-input__prefix {
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-  border: solid var(--ui-input-border-width) var(--ui-color-input-border);
-  border-right: none;
-  margin: 0;
-  background-color: var(--ui-color-input-prefix-background);
-  border-radius: 4px 0 0 4px;
-
-  @at-root .ui-input[class*='--invalid'] & {
-    border-color: var(--ui-color-danger);
-  }
-}
-
-.ui-input__prefix-icon-wrap {
-  display: flex;
-  width: var(--ui-input-prefix-icon-size);
-  align-items: center;
-}
-
-.ui-input__prefix-icon {
-  position: relative;
-}
-
-.ui-input__prefix-text {
-  font-size: 18px;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1.33;
-
-  @at-root .ui-input__prefix-icon-wrap + & {
-    margin-left: 8px;
-  }
-}
-
-a {
-  @keyframes {
-    0% {
-      top: 0;
-    }
-  }
-}
-
-@font-face {
-  font-family: 'foo';
-  src: url('./fonts/foo.woff2') format('woff2');
-}
-
-/* comment */
-
-.declaration-order {
-  /* Positioning */
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  width: 100px;
-  height: 100px;
-  padding: 10px;
-  border: 1px solid red;
-  margin: 10px;
-
-  /* Visual */
-
-  background-color: red;
-  border-radius: 4px;
-
-  /* Typography */
-  color: red;
-  float: right;
-  font: normal 16px Helvetica, sans-serif;
-  line-height: 1.3;
-  opacity: 1;
-  text-align: center;
-
-  /* Animation */
-  transition: all 1s;
-
-  /* Misc */
-  user-select: none;
-}
-
-.ui-input__field {
-  position: relative;
-  display: block;
-  width: 100%;
-  min-width: 0; // firefox input size inside flex container fix
-  padding: 0 var(--ui-input-padding-x);
-  border: solid var(--ui-input-border-width) var(--ui-color-input-border);
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: inset 0 0 0 1px transparent;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: calc(var(--ui-input-height) - var(--ui-input-border-width) * 2);
-  transition-duration: 0.1s;
-
-  &:focus {
-    border-color: var(--ui-color-outline);
-    background-color: white;
-    box-shadow: inset 0 0 0 1px var(--ui-color-outline);
-    outline: none;
-  }
-
-  &[type='number'] {
-    appearance: textfield;
-
-    &::-webkit-outer-spin-button,
-    &::-webkit-inner-spin-button {
-      margin: 0;
-      appearance: none;
-    }
-  }
-
-  &[type='password'] {
-    padding-right: var(--ui-input-height);
-  }
-
-  &[disabled] {
-    background-color: var(--ui-color-light);
-  }
-
-  &::placeholder {
-    color: var(--ui-color-placeholder);
-  }
-
-  @at-root .ui-input[class*='--size--small'] & {
-    font-size: 14px;
-  }
-
-  @at-root .ui-input[class*='--size--default'] & {
-    font-size: 16px;
-  }
-
-  @at-root .ui-input[class*='--size--large'] & {
-    font-size: 16px;
-  }
-
-  @at-root .ui-input__prefix + & {
-    border-radius: 0 4px 4px 0;
-  }
-
-  @at-root .ui-input[class*='--invalid'] & {
-    border-color: var(--ui-color-danger);
-
-    &:focus {
-      box-shadow: inset 0 0 0 1px var(--ui-color-danger);
-    }
-  }
-
-  @at-root .ui-input[class*='--invalid'] .ui-input__prefix + & {
-    border-left-color: var(--ui-color-border);
-
-    &:focus {
-      border-left-color: var(--ui-color-danger);
-    }
-  }
-
-  @at-root .ui-input[class*='--mask--2fa'] & {
-    background-color: var(--ui-color-light);
-    font-family: monospace;
-    font-weight: 600;
-    letter-spacing: calc(2em / 3);
-    text-align: center;
-    text-indent: calc(2em / 3);
-
-    &:focus {
-      background-color: white;
-    }
-
-    &:empty {
-      &:not(:focus) {
-        color: var(--ui-color-placeholder);
+      &:hover {
+        color: var(
+          --ui-button-color--h,
+          var(--ui-icon-default-background-color)
+        );
       }
     }
   }
 
-  @at-root .ui-input[class*='--mask--2fa'][class*='--size--large'] & {
-    font-size: 24px;
+  &--block {
+    width: 100%;
   }
 
-  @media ($mobile-l) {
-    font-size: 16px;
-  }
+  // + .ui-button {
+  //   margin-left: var(--ui-button-padding);
+
+  //   @media ($mobile-l) {
+  //     margin-left: calc(var(--ui-button-padding) / 2);
+  //   }
+  // }
 }
 
-.ui-input__password-show {
-  position: absolute;
-  top: 0;
-  right: 0;
+.ui-button__text-wrap {
   display: flex;
-  width: var(--ui-input-height);
-  height: var(--ui-input-height);
+  flex-grow: 1;
   align-items: center;
   justify-content: center;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
+  padding: var(--ui-button-padding);
+  font-size: var(--ui-button-font-size);
+  line-height: var(--ui-button-line-height);
 }
 
-.ui-input__rules {
-  position: relative;
-}
-
-.ui-input__rules-wrap {
-  margin-top: 8px;
-}
-
-.ui-input__messages {
-  position: relative;
+.ui-button__prefix {
   display: flex;
-  justify-content: space-between;
-  margin-top: 8px;
-  color: var(--ui-color-placeholder);
-  font-size: 12px;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 1.14;
+  align-items: center;
+  margin-right: 8px;
 
-  @at-root .ui-input[class*='--invalid'] & {
-    color: var(--ui-color-danger);
+  &:only-child {
+    margin-right: 0;
   }
 }
 
-.ui-input__prefix-message {
+.ui-button__text {
   position: relative;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-  &:not(:only-child) {
-    margin-right: 8px;
-  }
 }
 
-.ui-input__suffix-message {
-  position: relative;
-  overflow: hidden;
-  text-align: right;
-  text-overflow: ellipsis;
+.ui-button__suffix {
+  --ui-bitton-suffix-size: calc(
+    calc(var(--ui-button-padding) * 2) + var(--ui-button-icon-size)
+  );
 
-  &:not(:only-child) {
-    margin-left: 8px;
+  display: flex;
+  width: var(--ui-bitton-suffix-size);
+  flex-shrink: 0;
+  align-items: center;
+  align-self: stretch;
+  justify-content: center;
+  background-color: var(--ui-button-color--h, transparent);
+
+  @at-root .ui-button[class*='--color--link'] & {
+    background-color: transparent !important;
   }
 }
