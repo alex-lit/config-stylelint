@@ -1,3 +1,10 @@
+# [0.3.0](https://github.com/alex-lit/config-stylelint/compare/v0.2.0...v0.3.0) (2021-01-29)
+
+### Features
+
+- **stylelint-order:** extend order rules
+  ([23abac9](https://github.com/alex-lit/config-stylelint/commit/23abac995add99e9953a454e22670b500887cf17))
+
 # [0.2.0](https://github.com/alex-lit/config-stylelint/compare/v0.1.2...v0.2.0) (2021-01-29)
 
 ### Features
