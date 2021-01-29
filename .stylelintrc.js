@@ -9,10 +9,10 @@ module.exports = {
   ],
 
   extends: [
-    require.resolve('./configs/standard.js'),
-    require.resolve('./configs/scss.js'),
-    require.resolve('./configs/idiomatic-order.js'),
-    require.resolve('./configs/prettier.js'),
+    'stylelint-config-standard',
+    require.resolve('./plugins/scss.js'),
+    require.resolve('./plugins/order.js'),
+    require.resolve('./plugins/prettier.js'),
   ],
 
   rules: {
