@@ -1,3 +1,10 @@
+# [0.2.0](https://github.com/alex-lit/config-stylelint/compare/v0.1.2...v0.2.0) (2021-01-29)
+
+### Features
+
+- **order:** extend rules
+  ([8525ece](https://github.com/alex-lit/config-stylelint/commit/8525eceffe4de985482e4e4ed2045b6444be020c))
+
 ## [0.1.2](https://github.com/alex-lit/config-stylelint/compare/v0.1.1...v0.1.2) (2021-01-27)
 
 ### Bug Fixes
