@@ -16,6 +16,7 @@ module.exports = {
   ],
 
   rules: {
+    'at-rule-no-vendor-prefix': true,
     'at-rule-no-unknown': [
       true,
       {
@@ -24,7 +25,7 @@ module.exports = {
     ],
     'at-rule-empty-line-before': ['always', { except: 'first-nested' }],
     'block-no-empty': null,
-    'color-no-hex': null,
+    'color-no-hex': true,
     'custom-property-empty-line-before': null,
     'declaration-block-no-redundant-longhand-properties': null,
     'function-url-quotes': 'always',
