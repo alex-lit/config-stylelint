@@ -1,3 +1,10 @@
+## [0.3.2](https://github.com/alex-lit/config-stylelint/compare/v0.3.1...v0.3.2) (2021-01-31)
+
+### Features
+
+- **order:** extend pseudos
+  ([048284c](https://github.com/alex-lit/config-stylelint/commit/048284cb0ab3d0a3ee9c907ba3dd17329b515ed3))
+
 ## [0.3.1](https://github.com/alex-lit/config-stylelint/compare/v0.3.0...v0.3.1) (2021-01-31)
 
 ### Features
