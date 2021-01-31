@@ -1,3 +1,10 @@
+## [0.3.3](https://github.com/alex-lit/config-stylelint/compare/v0.3.2...v0.3.3) (2021-01-31)
+
+### Bug Fixes
+
+- remove buggy bem element selector ryle
+  ([1d44ef7](https://github.com/alex-lit/config-stylelint/commit/1d44ef71b2b5752b6b7f679acbc0c4a15ea25144))
+
 ## [0.3.2](https://github.com/alex-lit/config-stylelint/compare/v0.3.1...v0.3.2) (2021-01-31)
 
 ### Features
