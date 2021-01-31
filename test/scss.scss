@@ -42,33 +42,6 @@
   transition-duration: 0.1s;
   user-select: none;
 
-  &:active,
-  &:focus {
-    background-color: var(
-      --ui-button-color--p,
-      var(--ui-icon-default-background-color)
-    );
-    outline: none;
-  }
-
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-
-    &:hover,
-    &:active {
-      background-color: var(--ui-button-color);
-    }
-  }
-
-  &:hover {
-    background-color: var(
-      --ui-button-color--h,
-      var(--ui-icon-default-background-color)
-    );
-    text-decoration: none;
-  }
-
   &--size {
     &--small {
       --ui-button-padding: 8px;
@@ -129,13 +102,78 @@
     width: 100%;
   }
 
-  // + .ui-button {
-  //   margin-left: var(--ui-button-padding);
+  &:active,
+  &:focus {
+    background-color: var(
+      --ui-button-color--p,
+      var(--ui-icon-default-background-color)
+    );
+    outline: none;
+  }
 
-  //   @media ($mobile-l) {
-  //     margin-left: calc(var(--ui-button-padding) / 2);
-  //   }
-  // }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover,
+    &:active {
+      background-color: var(--ui-button-color);
+    }
+  }
+
+  &:hover {
+    background-color: var(
+      --ui-button-color--h,
+      var(--ui-icon-default-background-color)
+    );
+    text-decoration: none;
+  }
+
+  & * {
+  }
+
+  & ~ .ui-buttons {
+    margin-left: var(--ui-button-padding);
+
+    @media ($mobile-l) {
+      margin-left: calc(var(--ui-button-padding) / 2);
+    }
+  }
+
+  & ~ .ui-button {
+    margin-left: var(--ui-button-padding);
+
+    @media ($mobile-l) {
+      margin-left: calc(var(--ui-button-padding) / 2);
+    }
+  }
+
+  & + .ui-button {
+    margin-left: var(--ui-button-padding);
+
+    @media ($mobile-l) {
+      margin-left: calc(var(--ui-button-padding) / 2);
+    }
+  }
+
+  & > .ui-button {
+    margin-left: var(--ui-button-padding);
+
+    @media ($mobile-l) {
+      margin-left: calc(var(--ui-button-padding) / 2);
+    }
+  }
+
+  & .ui-button {
+    margin-left: var(--ui-button-padding);
+
+    @media ($mobile-l) {
+      margin-left: calc(var(--ui-button-padding) / 2);
+    }
+  }
+
+  & ::v-deep {
+  }
 }
 
 .ui-button__text-wrap {

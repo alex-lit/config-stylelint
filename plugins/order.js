@@ -6,27 +6,110 @@ module.exports = {
   rules: {
     'order/order': [
       /**
-       * SASS
+       * SASS Extend
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   @extend: .custom-class;
+       * }
+       * ```
        */
       { type: 'at-rule', name: 'extend' },
+
+      /**
+       * SASS Include
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   @include: mixins;
+       * }
+       * ```
+       */
       { type: 'at-rule', name: 'include' },
 
+      /**
+       * SASS Variables
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   $color: red;
+       * }
+       * ```
+       */
       'dollar-variables',
 
       /**
-       * LESS
+       * LESS Variables
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   @color: red;
+       * }
+       * ```
        */
       'at-variables',
 
       /**
        * CSS
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   --color: red;
+       * }
+       * ```
        */
       'custom-properties',
 
+      /**
+       * Declarations
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   color: red;
+       * }
+       * ```
+       */
       'declarations',
 
       /**
+       * BEM elements
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   &__element {}
+       * }
+       * ```
+       */
+      { type: 'rule', selector: /__/ },
+
+      /**
+       * BEM modifiers
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   &--modifier {}
+       * }
+       * ```
+       */
+      { type: 'rule', selector: /--/ },
+
+      /**
        * Pseudo Elements
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   &::before {}
+       * }
+       * ```
        */
       { type: 'rule', selector: '::first-line' },
       { type: 'rule', selector: '::first-letter' },
@@ -36,6 +119,13 @@ module.exports = {
 
       /**
        * Pseudo Classes
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   &:empty {}
+       * }
+       * ```
        */
       { type: 'rule', selector: ':active' },
       { type: 'rule', selector: ':checked' },
@@ -71,6 +161,13 @@ module.exports = {
 
       /**
        * CSS [attribute*=value] Selector
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   &[class*="custom"] {}
+       * }
+       * ```
        */
       { type: 'rule', selector: /\[accept/ },
       { type: 'rule', selector: /\[accept-charset/ },
@@ -241,17 +338,14 @@ module.exports = {
       { type: 'rule', selector: /\[/ },
 
       /**
-       * BEM modifiers
-       */
-      { type: 'rule', selector: /--/ },
-
-      /**
-       * Rules
-       */
-      'rules',
-
-      /**
        * At Rules
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   @media screen and (max-width: 992px) {}
+       * }
+       * ```
        */
       { type: 'at-rule', name: 'at-root' },
       'at-rules',
@@ -259,9 +353,38 @@ module.exports = {
       { type: 'at-rule', name: 'keyframes' },
 
       /**
-       * ::v-deep
+       * Rules
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   & + div {}
+       * }
+       * ```
+       */
+      { type: 'rule', selector: /\*/ },
+      { type: 'rule', selector: /~/ },
+      { type: 'rule', selector: /\+/ },
+      { type: 'rule', selector: />\s/ },
+      { type: 'rule', selector: /\./ },
+      { type: 'rule', selector: /#/ },
+      'rules',
+
+      /**
+       * Deep Operators
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   & ::v-deep {
+       *     & .child-component {}
+       *   }
+       * }
+       * ```
        */
       { type: 'rule', selector: /::v-deep/ },
+      { type: 'rule', selector: />>>/ },
+      { type: 'rule', selector: /\/deep\// },
     ],
   },
   'order/properties-alphabetical-order': true,
