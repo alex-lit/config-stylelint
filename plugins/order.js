@@ -78,18 +78,6 @@ module.exports = {
       'declarations',
 
       /**
-       * BEM elements
-       *
-       * @example
-       * ```scss
-       * .my-component {
-       *   &__element {}
-       * }
-       * ```
-       */
-      { type: 'rule', selector: /__/ },
-
-      /**
        * BEM modifiers
        *
        * @example
