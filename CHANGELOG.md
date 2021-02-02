@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/alex-lit/config-stylelint/compare/v0.3.6...v0.4.0) (2021-02-02)
+
+### Features
+
+- ally plugin
+  ([92a3ccf](https://github.com/alex-lit/config-stylelint/commit/92a3ccff0fd5102bdd78b968b10a2b31d7b13125))
+
 ## [0.3.6](https://github.com/alex-lit/config-stylelint/compare/v0.3.5...v0.3.6) (2021-02-02)
 
 ## [0.3.5](https://github.com/alex-lit/config-stylelint/compare/v0.3.4...v0.3.5) (2021-02-02)
