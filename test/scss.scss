@@ -107,6 +107,15 @@
     width: 100%;
   }
 
+  &::after {
+  }
+
+  & ::-moz-range-track {
+  }
+
+  & ::v-deep {
+  }
+
   &:active,
   &:focus {
     background-color: var(
@@ -178,9 +187,6 @@
     @media ($mobile-l) {
       margin-left: calc(var(--ui-button-padding) / 2);
     }
-  }
-
-  & ::v-deep {
   }
 }
 

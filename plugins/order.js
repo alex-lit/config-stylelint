@@ -111,6 +111,7 @@ module.exports = {
       { type: 'rule', selector: '::selection' },
       { type: 'rule', selector: '::slotted' },
       { type: 'rule', selector: '::spelling-error' },
+      { type: 'rule', selector: '::' },
       /**
        * Pseudo Classes
        *
@@ -173,6 +174,7 @@ module.exports = {
       { type: 'rule', selector: ':valid' },
       { type: 'rule', selector: ':visited' },
       { type: 'rule', selector: ':where' },
+      { type: 'rule', selector: ':' },
 
       /**
        * CSS [attribute*=value] Selector
