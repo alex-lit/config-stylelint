@@ -17,12 +17,7 @@ module.exports = {
 
   rules: {
     'at-rule-no-vendor-prefix': true,
-    'at-rule-no-unknown': [
-      true,
-      {
-        ignoreAtRules: ['for', 'each', 'extend', 'include', 'at-root', 'mixin'],
-      },
-    ],
+    'at-rule-no-unknown': null,
     'at-rule-empty-line-before': ['always', { except: 'first-nested' }],
     'block-no-empty': null,
     'color-no-hex': true,

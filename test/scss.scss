@@ -14,6 +14,10 @@
   --ui-button-color--p: currentColor;
 }
 
+@mixin font-size-default {
+  font-size: 16px;
+}
+
 .ui-button {
   @include variables;
 
@@ -31,6 +35,7 @@
     var(--ui-icon-default-background-color)
   );
   border-radius: 4px;
+  color: scale-color(saturate, blue, 20%);
   color: white;
   cursor: pointer;
   font-stretch: normal;
@@ -162,6 +167,9 @@
     @media ($mobile-l) {
       margin-left: calc(var(--ui-button-padding) / 2);
     }
+  }
+
+  &.tewst {
   }
 
   & .ui-button {
