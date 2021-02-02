@@ -1,3 +1,10 @@
+## [0.3.4](https://github.com/alex-lit/config-stylelint/compare/v0.3.3...v0.3.4) (2021-02-02)
+
+### Features
+
+- **scss:** extend rules
+  ([af17ab0](https://github.com/alex-lit/config-stylelint/commit/af17ab0f93c83fe94264f2a9ba7c1b12fbf99987))
+
 ## [0.3.3](https://github.com/alex-lit/config-stylelint/compare/v0.3.2...v0.3.3) (2021-01-31)
 
 ### Bug Fixes
