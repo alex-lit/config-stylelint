@@ -18,6 +18,26 @@
   font-size: 16px;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  .sdf {
+    animation: none;
+  }
+}
+
+.sdf {
+  animation-name: skew;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+a {
+  &:hover,
+  &:focus {
+  }
+}
+
 .ui-button {
   @include variables;
 
@@ -94,7 +114,8 @@
         );
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: var(
           --ui-button-color--h,
           var(--ui-icon-default-background-color)
@@ -116,8 +137,7 @@
   & ::v-deep {
   }
 
-  &:active,
-  &:focus {
+  &:active {
     background-color: var(
       --ui-button-color--p,
       var(--ui-icon-default-background-color)
@@ -130,12 +150,14 @@
     opacity: 0.5;
 
     &:hover,
+    &:focus,
     &:active {
       background-color: var(--ui-button-color);
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(
       --ui-button-color--h,
       var(--ui-icon-default-background-color)

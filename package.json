@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "stylelint": "^13.9.0",
+    "stylelint-a11y": "^1.2.3",
     "stylelint-config-idiomatic-order": "^8.1.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
