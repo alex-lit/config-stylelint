@@ -16,9 +16,9 @@ module.exports = {
   ],
 
   rules: {
-    'at-rule-no-vendor-prefix': true,
-    'at-rule-no-unknown': null,
     'at-rule-empty-line-before': ['always', { except: 'first-nested' }],
+    'at-rule-no-unknown': null,
+    'at-rule-no-vendor-prefix': true,
     'block-no-empty': null,
     'color-no-hex': true,
     'custom-property-empty-line-before': null,
@@ -28,15 +28,12 @@ module.exports = {
     'no-empty-source': null,
     'no-missing-end-of-source-newline': null,
     'number-leading-zero': 'always',
-    'media-feature-name-no-unknown': [
-      true,
-      { ignoreMediaFeatureNames: ['prefers-reduced-motion'] },
-    ],
-    'property-no-unknown': [true, { ignoreProperties: ['content-visibility'] }],
+    'media-feature-name-no-unknown': [true, { ignoreMediaFeatureNames: [] }],
+    'property-no-unknown': [true, { ignoreProperties: [] }],
     'rule-empty-line-before': ['always', { except: 'first-nested' }],
     'selector-pseudo-element-no-unknown': [
       true,
-      { ignorePseudoElements: ['range-thumb', 'v-deep'] },
+      { ignorePseudoElements: ['v-deep'] },
     ],
     'selector-type-no-unknown': [true, { ignoreTypes: ['ymaps'] }],
     'string-no-newline': null,

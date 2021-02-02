@@ -184,6 +184,17 @@
   }
 }
 
+@supports {
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animation {
+    -webkit-animation: none;
+    animation: none;
+    content-visibility: hidden;
+  }
+}
+
 .ui-textarea__field {
   position: relative;
   display: block;
