@@ -2,6 +2,7 @@ module.exports = {
   plugins: ['stylelint-scss'],
 
   rules: {
+    'scss/at-extend-no-missing-placeholder': true,
     'scss/at-rule-no-unknown': [
       true,
       {
