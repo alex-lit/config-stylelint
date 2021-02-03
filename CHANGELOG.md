@@ -1,3 +1,10 @@
+## [0.4.1](https://github.com/alex-lit/config-stylelint/compare/v0.4.0...v0.4.1) (2021-02-03)
+
+### Features
+
+- **scss:** add at-extend-no-missing-placeholder rule
+  ([53d31d0](https://github.com/alex-lit/config-stylelint/commit/53d31d0d3415a7a2b83f437a3a5d10c8e3f9af3c))
+
 # [0.4.0](https://github.com/alex-lit/config-stylelint/compare/v0.3.6...v0.4.0) (2021-02-02)
 
 ### Features
