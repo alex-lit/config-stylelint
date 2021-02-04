@@ -103,15 +103,23 @@ module.exports = {
       { type: 'rule', selector: '::backdrop' },
       { type: 'rule', selector: '::before' },
       { type: 'rule', selector: '::cue' },
+      { type: 'rule', selector: '::cue-region' },
       { type: 'rule', selector: '::first-letter' },
       { type: 'rule', selector: '::first-line' },
+      { type: 'rule', selector: '::file-selector-button' },
       { type: 'rule', selector: '::grammar-error' },
       { type: 'rule', selector: '::marker' },
+      { type: 'rule', selector: '::part' },
       { type: 'rule', selector: '::placeholder' },
       { type: 'rule', selector: '::selection' },
       { type: 'rule', selector: '::slotted' },
       { type: 'rule', selector: '::spelling-error' },
-      { type: 'rule', selector: '::' },
+      { type: 'rule', selector: '::-khtml-' },
+      { type: 'rule', selector: '::-moz-' },
+      { type: 'rule', selector: '::-ms-' },
+      { type: 'rule', selector: '::-o-' },
+      { type: 'rule', selector: '::-webkit-' },
+
       /**
        * Pseudo Classes
        *
@@ -122,57 +130,83 @@ module.exports = {
        * }
        * ```
        */
-      { type: 'rule', selector: ':active' },
-      { type: 'rule', selector: ':any' },
-      { type: 'rule', selector: ':any-link' },
-      { type: 'rule', selector: ':blank' },
-      { type: 'rule', selector: ':checked' },
-      { type: 'rule', selector: ':default' },
-      { type: 'rule', selector: ':defined' },
+
+      // Linguistic pseudo-classes
       { type: 'rule', selector: ':dir' },
-      { type: 'rule', selector: ':disabled' },
-      { type: 'rule', selector: ':empty' },
-      { type: 'rule', selector: ':enabled' },
-      { type: 'rule', selector: ':first' },
-      { type: 'rule', selector: ':first-child' },
-      { type: 'rule', selector: ':first-of-type' },
+      { type: 'rule', selector: ':lang' },
+
+      // Location pseudo-classes
+      { type: 'rule', selector: ':any-link' },
+      { type: 'rule', selector: ':link' },
+      { type: 'rule', selector: ':visited' },
+      { type: 'rule', selector: ':local-link' },
+      { type: 'rule', selector: ':target' },
+      { type: 'rule', selector: ':target-within' },
+      { type: 'rule', selector: ':scope' },
+
+      // User action pseudo-classes
+      { type: 'rule', selector: ':hover' },
+      { type: 'rule', selector: ':active' },
       { type: 'rule', selector: ':focus' },
       { type: 'rule', selector: ':focus-visible' },
       { type: 'rule', selector: ':focus-within' },
+
+      // Time-dimensional pseudo-classes
+
+      { type: 'rule', selector: ':current' },
+      { type: 'rule', selector: ':past' },
+      { type: 'rule', selector: ':future' },
+
+      // Resource state pseudo-classes
+
+      { type: 'rule', selector: ':playing' },
+      { type: 'rule', selector: ':paused' },
+
+      // The input pseudo-classes
+      { type: 'rule', selector: ':enabled' },
+      { type: 'rule', selector: ':disabled' },
+      { type: 'rule', selector: ':read-only' },
+      { type: 'rule', selector: ':read-write' },
+      { type: 'rule', selector: ':placeholder-shown' },
+      { type: 'rule', selector: ':default' },
+      { type: 'rule', selector: ':checked' },
+      { type: 'rule', selector: ':indeterminate' },
+      { type: 'rule', selector: ':blank' },
+      { type: 'rule', selector: ':valid' },
+      { type: 'rule', selector: ':invalid' },
+      { type: 'rule', selector: ':in-range' },
+      { type: 'rule', selector: ':out-of-range' },
+      { type: 'rule', selector: ':required' },
+      { type: 'rule', selector: ':optional' },
+      { type: 'rule', selector: ':user-invalid' },
+
+      // Tree-structural pseudo-classes
+      { type: 'rule', selector: ':root' },
+      { type: 'rule', selector: ':empty' },
+      { type: 'rule', selector: ':nth-child' },
+      { type: 'rule', selector: ':nth-last-child' },
+      { type: 'rule', selector: ':first-child' },
+      { type: 'rule', selector: ':last-child' },
+      { type: 'rule', selector: ':only-child' },
+      { type: 'rule', selector: ':nth-of-type' },
+      { type: 'rule', selector: ':nth-last-of-type' },
+      { type: 'rule', selector: ':first-of-type' },
+      { type: 'rule', selector: ':last-of-type' },
+
+      // Other
+      { type: 'rule', selector: ':any' },
+      { type: 'rule', selector: ':defined' },
+      { type: 'rule', selector: ':first' },
       { type: 'rule', selector: ':fullscreen' },
       { type: 'rule', selector: ':has' },
       { type: 'rule', selector: ':host' },
       { type: 'rule', selector: ':host-context' },
-      { type: 'rule', selector: ':hover' },
-      { type: 'rule', selector: ':in-range' },
-      { type: 'rule', selector: ':indeterminate' },
-      { type: 'rule', selector: ':invalid' },
       { type: 'rule', selector: ':is' },
-      { type: 'rule', selector: ':lang' },
-      { type: 'rule', selector: ':last-child' },
-      { type: 'rule', selector: ':last-of-type' },
       { type: 'rule', selector: ':left' },
-      { type: 'rule', selector: ':link' },
       { type: 'rule', selector: ':matches' },
       { type: 'rule', selector: ':not' },
-      { type: 'rule', selector: ':nth-child' },
-      { type: 'rule', selector: ':nth-last-child' },
-      { type: 'rule', selector: ':nth-last-of-type' },
-      { type: 'rule', selector: ':nth-of-type' },
-      { type: 'rule', selector: ':only-child' },
       { type: 'rule', selector: ':only-of-type' },
-      { type: 'rule', selector: ':optional' },
-      { type: 'rule', selector: ':out-of-range' },
-      { type: 'rule', selector: ':placeholder-shown' },
-      { type: 'rule', selector: ':read-only' },
-      { type: 'rule', selector: ':read-write' },
-      { type: 'rule', selector: ':required' },
       { type: 'rule', selector: ':right' },
-      { type: 'rule', selector: ':root' },
-      { type: 'rule', selector: ':scope' },
-      { type: 'rule', selector: ':target' },
-      { type: 'rule', selector: ':valid' },
-      { type: 'rule', selector: ':visited' },
       { type: 'rule', selector: ':where' },
       { type: 'rule', selector: ':' },
 
@@ -364,10 +398,32 @@ module.exports = {
        * }
        * ```
        */
+
+      // SCSS
       { type: 'at-rule', name: 'at-root' },
-      'at-rules',
+
+      // Conditional group rules
       { type: 'at-rule', name: 'media' },
+      { type: 'at-rule', name: 'supports' },
+      { type: 'at-rule', name: 'document' },
+
+      // Nested
+      { type: 'at-rule', name: 'page' },
+      { type: 'at-rule', name: 'font-face' },
       { type: 'at-rule', name: 'keyframes' },
+      { type: 'at-rule', name: 'viewport' },
+      { type: 'at-rule', name: 'counter-style' },
+
+      // Font-feature
+      { type: 'at-rule', name: 'font-feature-values' },
+      { type: 'at-rule', name: 'swash' },
+      { type: 'at-rule', name: 'ornaments' },
+      { type: 'at-rule', name: 'annotation' },
+      { type: 'at-rule', name: 'stylistic' },
+      { type: 'at-rule', name: 'styleset' },
+      { type: 'at-rule', name: 'character-variant' },
+
+      'at-rules',
 
       /**
        * Rules
@@ -385,6 +441,7 @@ module.exports = {
       { type: 'rule', selector: />\s/ },
       { type: 'rule', selector: /\./ },
       { type: 'rule', selector: /#/ },
+
       'rules',
 
       /**
