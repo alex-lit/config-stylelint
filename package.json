@@ -46,6 +46,7 @@
     "stylelint-order": "^4.1.0",
     "stylelint-prettier": "^1.1.2",
     "stylelint-scss": "^3.18.0",
+    "stylelint-use-logical": "^1.1.0",
     "stylelint-use-nesting": "^3.0.0"
   },
   "devDependencies": {

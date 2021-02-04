@@ -10,12 +10,12 @@ module.exports = {
 
   extends: [
     'stylelint-config-standard',
-    require.resolve('./plugins/a11y.js'),
-    require.resolve('./plugins/declaration-block-no-ignored-properties.js'),
-    require.resolve('./plugins/high-performance-animation.js'),
-    require.resolve('./plugins/order.js'),
-    require.resolve('./plugins/scss.js'),
-    require.resolve('./plugins/prettier.js'),
+    require.resolve('./plugins/a11y'),
+    require.resolve('./plugins/declaration-block-no-ignored-properties'),
+    require.resolve('./plugins/high-performance-animation'),
+    require.resolve('./plugins/order'),
+    require.resolve('./plugins/scss'),
+    require.resolve('./plugins/prettier'),
   ],
 
   rules: {
