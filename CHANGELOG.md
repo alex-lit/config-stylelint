@@ -1,3 +1,10 @@
+# [0.6.0](https://github.com/alex-lit/config-stylelint/compare/v0.5.0...v0.6.0) (2021-02-04)
+
+### Features
+
+- add use-logical plugin
+  ([15eb2ff](https://github.com/alex-lit/config-stylelint/commit/15eb2ff570a58da12c28f3bc646352653bee2dd6))
+
 # [0.5.0](https://github.com/alex-lit/config-stylelint/compare/v0.4.4...v0.5.0) (2021-02-04)
 
 ### Features
