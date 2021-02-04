@@ -11,8 +11,9 @@ module.exports = {
   extends: [
     'stylelint-config-standard',
     require.resolve('./plugins/a11y.js'),
-    require.resolve('./plugins/scss.js'),
+    require.resolve('./plugins/high-performance-animation.js'),
     require.resolve('./plugins/order.js'),
+    require.resolve('./plugins/scss.js'),
     require.resolve('./plugins/prettier.js'),
   ],
 

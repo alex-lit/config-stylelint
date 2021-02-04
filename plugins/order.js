@@ -1,3 +1,6 @@
+/**
+ * @see [stylelint-order](https://github.com/hudochenkov/stylelint-order)
+ */
 module.exports = {
   plugins: ['stylelint-order'],
 

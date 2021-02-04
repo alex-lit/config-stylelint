@@ -1,4 +1,8 @@
 /* eslint-disable sonarjs/no-duplicate-string */
+
+/**
+ * @see [stylelint-scss](https://github.com/kristerkari/stylelint-scss)
+ */
 module.exports = {
   plugins: ['stylelint-scss'],
 

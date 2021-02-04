@@ -1,3 +1,6 @@
+/**
+ * @see [stylelint-a11y](https://github.com/YozhikM/stylelint-a11y)
+ */
 module.exports = {
   plugins: ['stylelint-a11y'],
 
