@@ -6,7 +6,7 @@ module.exports = {
   rules: {
     'order/order': [
       /**
-       * SASS Extend
+       * SASS extend
        *
        * @example
        * ```scss
@@ -18,7 +18,7 @@ module.exports = {
       { type: 'at-rule', name: 'extend' },
 
       /**
-       * SASS Include
+       * SASS include
        *
        * @example
        * ```scss
@@ -30,7 +30,7 @@ module.exports = {
       { type: 'at-rule', name: 'include' },
 
       /**
-       * SASS Variables
+       * SASS variables
        *
        * @example
        * ```scss
@@ -42,7 +42,7 @@ module.exports = {
       'dollar-variables',
 
       /**
-       * LESS Variables
+       * LESS variables
        *
        * @example
        * ```scss
@@ -90,51 +90,7 @@ module.exports = {
       { type: 'rule', selector: /--/ },
 
       /**
-       * Pseudo Elements
-       *
-       * @example
-       * ```scss
-       * .my-component {
-       *   &::before {}
-       * }
-       * ```
-       */
-      // Elements
-      { type: 'rule', selector: '::before' },
-      { type: 'rule', selector: '::after' },
-
-      // Text
-      { type: 'rule', selector: '::first-letter' },
-      { type: 'rule', selector: '::first-line' },
-
-      // Style
-      { type: 'rule', selector: '::selection' },
-      { type: 'rule', selector: '::marker' },
-      { type: 'rule', selector: '::placeholder' },
-      { type: 'rule', selector: '::backdrop' },
-      { type: 'rule', selector: '::file-selector-button' },
-
-      // Web video text tracks format
-      { type: 'rule', selector: '::cue' },
-      { type: 'rule', selector: '::cue-region' },
-
-      // Web Components
-      { type: 'rule', selector: '::part' },
-      { type: 'rule', selector: '::slotted' },
-
-      // Spell checker
-      { type: 'rule', selector: '::grammar-error' },
-      { type: 'rule', selector: '::spelling-error' },
-
-      // Vendors
-      { type: 'rule', selector: '::-khtml-' },
-      { type: 'rule', selector: '::-moz-' },
-      { type: 'rule', selector: '::-ms-' },
-      { type: 'rule', selector: '::-o-' },
-      { type: 'rule', selector: '::-webkit-' },
-
-      /**
-       * Pseudo Classes
+       * Properties
        *
        * @example
        * ```scss
@@ -165,13 +121,11 @@ module.exports = {
       { type: 'rule', selector: ':focus-within' },
 
       // Time-dimensional pseudo-classes
-
       { type: 'rule', selector: ':current' },
       { type: 'rule', selector: ':past' },
       { type: 'rule', selector: ':future' },
 
       // Resource state pseudo-classes
-
       { type: 'rule', selector: ':playing' },
       { type: 'rule', selector: ':paused' },
 
@@ -205,6 +159,7 @@ module.exports = {
       { type: 'rule', selector: ':nth-last-of-type' },
       { type: 'rule', selector: ':first-of-type' },
       { type: 'rule', selector: ':last-of-type' },
+      { type: 'rule', selector: ':only-of-type' },
 
       // Other
       { type: 'rule', selector: ':any' },
@@ -218,21 +173,86 @@ module.exports = {
       { type: 'rule', selector: ':left' },
       { type: 'rule', selector: ':matches' },
       { type: 'rule', selector: ':not' },
-      { type: 'rule', selector: ':only-of-type' },
       { type: 'rule', selector: ':right' },
       { type: 'rule', selector: ':where' },
       { type: 'rule', selector: ':' },
 
       /**
-       * CSS [attribute*=value] Selector
+       * Pseudo elements
        *
        * @example
        * ```scss
        * .my-component {
-       *   &[class*="custom"] {}
+       *   &::before {}
        * }
        * ```
        */
+      // Elements
+      { type: 'rule', selector: '::before' },
+      { type: 'rule', selector: '::after' },
+
+      // Text
+      { type: 'rule', selector: '::first-letter' },
+      { type: 'rule', selector: '::first-line' },
+
+      // Style
+      { type: 'rule', selector: '::selection' },
+      { type: 'rule', selector: '::marker' },
+      { type: 'rule', selector: '::placeholder' },
+      { type: 'rule', selector: '::backdrop' },
+      { type: 'rule', selector: '::file-selector-button' },
+
+      // Web video text tracks format
+      { type: 'rule', selector: '::cue' },
+      { type: 'rule', selector: '::cue-region' },
+
+      // Web components
+      { type: 'rule', selector: '::part' },
+      { type: 'rule', selector: '::slotted' },
+
+      // Spell checker
+      { type: 'rule', selector: '::grammar-error' },
+      { type: 'rule', selector: '::spelling-error' },
+
+      // Vendors
+      { type: 'rule', selector: '::-khtml-' },
+      { type: 'rule', selector: '::-moz-' },
+      { type: 'rule', selector: '::-ms-' },
+      { type: 'rule', selector: '::-o-' },
+      { type: 'rule', selector: '::-webkit-' },
+
+      // Deep
+      { type: 'rule', selector: '::v-deep' },
+
+      // Other
+      { type: 'rule', selector: '::' },
+
+      // Selector list
+      { type: 'rule', selector: ',' },
+
+      /**
+       * Basic selectors
+       *
+       *
+       * @example
+       * ```scss
+       * .my-component {}
+       * ```
+       */
+
+      // Type selector
+      'rules',
+
+      // Class selector
+      { type: 'rule', selector: /\./ },
+
+      // ID selector
+      { type: 'rule', selector: /#/ },
+
+      // Universal selector
+      { type: 'rule', selector: /\*/ },
+
+      // Attribute selector selector
       { type: 'rule', selector: /\[accept/ },
       { type: 'rule', selector: /\[accept-charset/ },
       { type: 'rule', selector: /\[accesskey/ },
@@ -402,7 +422,33 @@ module.exports = {
       { type: 'rule', selector: /\[/ },
 
       /**
-       * At Rules
+       * Combinators
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   & + a {}
+       * }
+       * ```
+       */
+
+      // Adjacent sibling combinator
+      { type: 'rule', selector: /\+/ },
+
+      // General sibling combinator
+      { type: 'rule', selector: /~/ },
+
+      // Child combinator
+      { type: 'rule', selector: />/ },
+
+      // Descendant combinator
+      { type: 'rule', selector: /\./ },
+
+      // Column combinator
+      { type: 'rule', selector: /\|\|/ },
+
+      /**
+       * At rules
        *
        * @example
        * ```scss
@@ -436,42 +482,8 @@ module.exports = {
       { type: 'at-rule', name: 'styleset' },
       { type: 'at-rule', name: 'character-variant' },
 
+      // Other
       'at-rules',
-
-      /**
-       * Rules
-       *
-       * @example
-       * ```scss
-       * .my-component {
-       *   & + div {}
-       * }
-       * ```
-       */
-      { type: 'rule', selector: /\*/ },
-      { type: 'rule', selector: /~/ },
-      { type: 'rule', selector: /\+/ },
-      { type: 'rule', selector: />\s/ },
-      { type: 'rule', selector: /\./ },
-      { type: 'rule', selector: /#/ },
-
-      'rules',
-
-      /**
-       * Deep Operators
-       *
-       * @example
-       * ```scss
-       * .my-component {
-       *   & ::v-deep {
-       *     & .child-component {}
-       *   }
-       * }
-       * ```
-       */
-      { type: 'rule', selector: /::v-deep/ },
-      { type: 'rule', selector: />>>/ },
-      { type: 'rule', selector: /\/deep\// },
     ],
   },
   'order/properties-alphabetical-order': true,

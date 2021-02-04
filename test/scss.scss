@@ -44,8 +44,8 @@ header {
 .l__button--3 {
   @extend %sdf;
 
-  @include variables;
   @include ddf;
+  @include variables;
   @include ddf;
   @include ddf;
   @include ddf;
@@ -138,15 +138,6 @@ header {
     width: 100%;
   }
 
-  &::after {
-  }
-
-  &::before {
-  }
-
-  & ::-moz-range-track {
-  }
-
   &:hover,
   &:focus {
     background-color: var(
@@ -175,6 +166,18 @@ header {
     }
   }
 
+  &::before {
+  }
+
+  &::after {
+  }
+
+  &::file-selector-button {
+  }
+
+  &::-moz-range-track {
+  }
+
   & ::v-deep {
     & .test3 {
       & .test4 {
@@ -188,7 +191,12 @@ header {
     }
   }
 
-  & * {
+  & + .ui-button {
+    margin-left: var(--ui-button-padding);
+
+    @media ($mobile-l) {
+      margin-left: calc(var(--ui-button-padding) / 2);
+    }
   }
 
   & ~ .ui-buttons {
@@ -209,14 +217,6 @@ header {
     }
   }
 
-  & + .ui-button {
-    margin-left: var(--ui-button-padding);
-
-    @media ($mobile-l) {
-      margin-left: calc(var(--ui-button-padding) / 2);
-    }
-  }
-
   & > .ui-button {
     margin-left: var(--ui-button-padding);
 
@@ -225,25 +225,23 @@ header {
     }
   }
 
-  &.tewst {
+  & * {
   }
 
-  & .ui-button {
-    margin-left: var(--ui-button-padding);
+  & [tewst] {
+  }
 
-    @media ($mobile-l) {
-      margin-left: calc(var(--ui-button-padding) / 2);
+  &[tewst] {
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animation {
+      animation: none;
+      content-visibility: hidden;
     }
   }
-}
 
-@supports {
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .animation {
-    animation: none;
-    content-visibility: hidden;
+  @supports {
   }
 }
 
@@ -268,15 +266,18 @@ header {
   resize: vertical;
   transition-duration: 0.1s;
 
-  &::placeholder {
-    color: var(--ui-color-placeholder);
-  }
-
   &:focus {
     border-color: var(--ui-color-outline);
     background-color: white;
     box-shadow: inset 0 0 0 1px var(--ui-color-outline);
     outline: none;
+  }
+
+  &::placeholder {
+    color: var(--ui-color-placeholder);
+  }
+
+  & .sdaf {
   }
 
   &[disabled] {

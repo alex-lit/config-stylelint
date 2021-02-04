@@ -60,15 +60,17 @@ module.exports = {
       '^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$',
       {
         message:
-          'Selector should be written in lowercase with hyphens (selector-class-pattern)',
+          'Selector should be written in BEM "block-name__element-name--modifier--value" (selector-class-pattern)',
       },
     ],
+    'selector-combinator-disallowed-list': ['>>>', '/deep/'],
     'selector-max-compound-selectors': 6,
     'selector-max-id': 0,
     'selector-no-vendor-prefix': true,
+    'selector-pseudo-element-disallowed-list': ['shadow'],
     'selector-pseudo-element-no-unknown': [
       true,
-      { ignorePseudoElements: ['v-deep'] },
+      { ignorePseudoElements: ['v-deep', 'file-selector-button'] },
     ],
     'selector-type-no-unknown': [true, { ignoreTypes: ['ymaps'] }],
     'shorthand-property-no-redundant-values': true,
