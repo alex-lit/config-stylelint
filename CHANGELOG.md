@@ -1,3 +1,12 @@
+# [0.5.0](https://github.com/alex-lit/config-stylelint/compare/v0.4.4...v0.5.0) (2021-02-04)
+
+### Features
+
+- add stylelint-declaration-block-no-ignored-properties plugin
+  ([164a4ac](https://github.com/alex-lit/config-stylelint/commit/164a4aca649233ed4f22c11e8efef0ce0a14cff6))
+- add stylelint-high-performance-animation plugin
+  ([165f67e](https://github.com/alex-lit/config-stylelint/commit/165f67e38c332d8b0736ae6034d64a7212b0043b))
+
 ## [0.4.4](https://github.com/alex-lit/config-stylelint/compare/v0.4.3...v0.4.4) (2021-02-04)
 
 ## [0.4.3](https://github.com/alex-lit/config-stylelint/compare/v0.4.2...v0.4.3) (2021-02-04)
