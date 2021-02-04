@@ -99,21 +99,34 @@ module.exports = {
        * }
        * ```
        */
-      { type: 'rule', selector: '::after' },
-      { type: 'rule', selector: '::backdrop' },
+      // Elements
       { type: 'rule', selector: '::before' },
-      { type: 'rule', selector: '::cue' },
-      { type: 'rule', selector: '::cue-region' },
+      { type: 'rule', selector: '::after' },
+
+      // Text
       { type: 'rule', selector: '::first-letter' },
       { type: 'rule', selector: '::first-line' },
-      { type: 'rule', selector: '::file-selector-button' },
-      { type: 'rule', selector: '::grammar-error' },
-      { type: 'rule', selector: '::marker' },
-      { type: 'rule', selector: '::part' },
-      { type: 'rule', selector: '::placeholder' },
+
+      // Style
       { type: 'rule', selector: '::selection' },
+      { type: 'rule', selector: '::marker' },
+      { type: 'rule', selector: '::placeholder' },
+      { type: 'rule', selector: '::backdrop' },
+      { type: 'rule', selector: '::file-selector-button' },
+
+      // Web video text tracks format
+      { type: 'rule', selector: '::cue' },
+      { type: 'rule', selector: '::cue-region' },
+
+      // Web Components
+      { type: 'rule', selector: '::part' },
       { type: 'rule', selector: '::slotted' },
+
+      // Spell checker
+      { type: 'rule', selector: '::grammar-error' },
       { type: 'rule', selector: '::spelling-error' },
+
+      // Vendors
       { type: 'rule', selector: '::-khtml-' },
       { type: 'rule', selector: '::-moz-' },
       { type: 'rule', selector: '::-ms-' },
