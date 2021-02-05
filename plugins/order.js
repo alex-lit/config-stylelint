@@ -81,7 +81,7 @@ module.exports = {
       'declarations',
 
       /**
-       * BEM modifiers
+       * BEM class
        *
        * @example
        * ```scss
@@ -90,6 +90,7 @@ module.exports = {
        * }
        * ```
        */
+      { type: 'rule', selector: /__/ },
       { type: 'rule', selector: /--/ },
 
       /**
@@ -243,11 +244,8 @@ module.exports = {
        * ```
        */
 
-      // Type selector
-      'rules',
-
       // Class selector
-      { type: 'rule', selector: /\./ },
+      { type: 'rule', selector: /^\./ },
 
       // ID selector
       { type: 'rule', selector: /#/ },
@@ -430,7 +428,7 @@ module.exports = {
        * @example
        * ```scss
        * .my-component {
-       *   & + a {}
+       *   + a {}
        * }
        * ```
        */
@@ -444,11 +442,11 @@ module.exports = {
       // Child combinator
       { type: 'rule', selector: />/ },
 
-      // Descendant combinator
-      { type: 'rule', selector: /\./ },
-
       // Column combinator
       { type: 'rule', selector: /\|\|/ },
+
+      // Other
+      'rules',
 
       /**
        * At rules

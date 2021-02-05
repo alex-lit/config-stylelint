@@ -188,20 +188,58 @@ header {
   &::-moz-range-track {
   }
 
-  & ::v-deep {
-    & .test3 {
-      & .test4 {
-        & .test5 {
-          // @media ($mobile-l) {
-          & .test6 {
+  ::v-deep {
+    .test3 {
+      .test4 {
+        .test5 {
+          @media ($mobile-l) {
+            .test6 {
+            }
           }
-          // }
         }
       }
     }
   }
 
-  & + .ui-button {
+  .f {
+  }
+
+  * {
+  }
+
+  &[tewst] {
+  }
+
+  [tewst] {
+  }
+
+  + .ui-button {
+    margin-left: var(--ui-button-padding);
+
+    @media ($mobile-l) {
+      margin-left: calc(var(--ui-button-padding) / 2); /* sdf */
+    }
+  }
+
+  /* sdf */
+
+  ~ .ui-button {
+    margin-left: var(--ui-button-padding);
+
+    @media ($mobile-l) {
+      margin-left: calc(var(--ui-button-padding) / 2); /* sdf */
+    }
+  }
+
+  ~ .ui-buttons {
+    margin-left: var(--ui-button-padding); // dsf
+
+    @media ($mobile-l) {
+      margin-left: calc(var(--ui-button-padding) / 2);
+    }
+  }
+
+  > .ui-button {
     margin-left: var(--ui-button-padding);
 
     @media ($mobile-l) {
@@ -209,39 +247,17 @@ header {
     }
   }
 
-  & ~ .ui-buttons {
-    margin-left: var(--ui-button-padding);
-
-    @media ($mobile-l) {
-      margin-left: calc(var(--ui-button-padding) / 2);
-    }
+  &.f {
   }
 
-  & ~ .ui-button {
-    & + a {
+  &.ui-button {
+    + a {
       margin-left: var(--ui-button-padding);
 
       @media ($mobile-l) {
         margin-left: calc(var(--ui-button-padding) / 2);
       }
     }
-  }
-
-  & > .ui-button {
-    margin-left: var(--ui-button-padding);
-
-    @media ($mobile-l) {
-      margin-left: calc(var(--ui-button-padding) / 2);
-    }
-  }
-
-  & * {
-  }
-
-  & [tewst] {
-  }
-
-  &[tewst] {
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -287,7 +303,8 @@ header {
     color: var(--ui-color-placeholder);
   }
 
-  & .sdaf {
+  .sdafdf {
+    outline: none;
   }
 
   &[disabled] {

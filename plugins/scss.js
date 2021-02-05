@@ -12,12 +12,7 @@ module.exports = {
     'scss/at-import-no-partial-leading-underscore': true,
     'scss/at-import-partial-extension-blacklist': ['scss'],
     'scss/at-mixin-pattern': KEBAB_CASE_PATTERN,
-    'scss/at-rule-no-unknown': [
-      true,
-      {
-        ignoreAtRules: [],
-      },
-    ],
+    'scss/at-rule-no-unknown': [true, { ignoreAtRules: [] }],
     'scss/declaration-nested-properties': 'never',
     'scss/dollar-variable-pattern': KEBAB_CASE_PATTERN,
     'scss/function-color-relative': true,
@@ -25,6 +20,9 @@ module.exports = {
     'scss/no-duplicate-mixins': true,
     'scss/percent-placeholder-pattern': KEBAB_CASE_PATTERN,
     'scss/selector-nest-combinators': 'always',
-    'scss/selector-no-redundant-nesting-selector': null,
+    'scss/selector-no-redundant-nesting-selector': [
+      true,
+      { ignoreKeywords: [] },
+    ],
   },
 };
