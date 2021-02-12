@@ -50,6 +50,6 @@
     "stylelint-use-nesting": "^3.0.0"
   },
   "devDependencies": {
-    "@alexlit/lint-kit": "0.27.0"
+    "@alexlit/lint-kit": "0.29.1"
   }
 }
