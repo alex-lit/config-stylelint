@@ -1,3 +1,10 @@
+## [0.8.1](https://github.com/alex-lit/config-stylelint/compare/v0.8.0...v0.8.1) (2021-02-19)
+
+### Bug Fixes
+
+- **order:** move bem order
+  ([0c422ce](https://github.com/alex-lit/config-stylelint/commit/0c422ce39ebfa185c6769bb8e7af3f5b22a36130))
+
 # [0.8.0](https://github.com/alex-lit/config-stylelint/compare/v0.7.0...v0.8.0) (2021-02-11)
 
 # [0.7.0](https://github.com/alex-lit/config-stylelint/compare/v0.6.1...v0.7.0) (2021-02-09)
