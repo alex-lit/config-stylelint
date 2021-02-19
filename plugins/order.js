@@ -81,19 +81,6 @@ module.exports = {
       'declarations',
 
       /**
-       * BEM class
-       *
-       * @example
-       * ```scss
-       * .my-component {
-       *   &--modifier {}
-       * }
-       * ```
-       */
-      { type: 'rule', selector: /__/ },
-      { type: 'rule', selector: /--/ },
-
-      /**
        * Properties
        *
        * @example
@@ -447,6 +434,19 @@ module.exports = {
 
       // Other
       'rules',
+
+      /**
+       * BEM class
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   &--modifier {}
+       * }
+       * ```
+       */
+      { type: 'rule', selector: /__/ },
+      { type: 'rule', selector: /--/ },
 
       /**
        * At rules
