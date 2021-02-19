@@ -87,67 +87,6 @@ header {
   transition-duration: 0s;
   user-select: none;
 
-  &--size {
-    &--small {
-      --ui-button-padding: 8px;
-      --ui-button-font-size: 14px;
-      --ui-button-line-height: 1.14;
-    }
-
-    &--default {
-      --ui-button-padding: 8px;
-      --ui-button-font-size: 16px;
-      --ui-button-line-height: 1.5;
-    }
-
-    &--large {
-      --ui-button-padding: 16px;
-      --ui-button-font-size: 20px;
-      --ui-button-line-height: 1.2;
-    }
-  }
-
-  &--color {
-    &--light,
-    &--white {
-      --ui-button-icon-size: calc(
-        var(--ui-button-font-size) * var(--ui-button-line-height) - 2px
-      );
-
-      border: solid 1px var(--ui-color-input-border);
-      color: var(--ui-color-secondary);
-    }
-
-    &--link {
-      --ui-button-icon-size: calc(
-        var(--ui-button-font-size) * var(--ui-button-line-height) - 2px
-      );
-
-      border: solid 1px var(--ui-color-input-border);
-      background-color: transparent !important;
-      color: var(--ui-button-color);
-
-      &:hover,
-      &:focus {
-        color: var(
-          --ui-button-color--h,
-          var(--ui-icon-default-background-color)
-        );
-      }
-
-      &:active {
-        color: var(
-          --ui-button-color--p,
-          var(--ui-icon-default-background-color)
-        );
-      }
-    }
-  }
-
-  &--block {
-    width: 100%;
-  }
-
   &:hover,
   &:focus {
     background-color: var(
@@ -258,6 +197,67 @@ header {
         margin-left: calc(var(--ui-button-padding) / 2);
       }
     }
+  }
+
+  &--size {
+    &--small {
+      --ui-button-padding: 8px;
+      --ui-button-font-size: 14px;
+      --ui-button-line-height: 1.14;
+    }
+
+    &--default {
+      --ui-button-padding: 8px;
+      --ui-button-font-size: 16px;
+      --ui-button-line-height: 1.5;
+    }
+
+    &--large {
+      --ui-button-padding: 16px;
+      --ui-button-font-size: 20px;
+      --ui-button-line-height: 1.2;
+    }
+  }
+
+  &--color {
+    &--light,
+    &--white {
+      --ui-button-icon-size: calc(
+        var(--ui-button-font-size) * var(--ui-button-line-height) - 2px
+      );
+
+      border: solid 1px var(--ui-color-input-border);
+      color: var(--ui-color-secondary);
+    }
+
+    &--link {
+      --ui-button-icon-size: calc(
+        var(--ui-button-font-size) * var(--ui-button-line-height) - 2px
+      );
+
+      border: solid 1px var(--ui-color-input-border);
+      background-color: transparent !important;
+      color: var(--ui-button-color);
+
+      &:hover,
+      &:focus {
+        color: var(
+          --ui-button-color--h,
+          var(--ui-icon-default-background-color)
+        );
+      }
+
+      &:active {
+        color: var(
+          --ui-button-color--p,
+          var(--ui-icon-default-background-color)
+        );
+      }
+    }
+  }
+
+  &--block {
+    width: 100%;
   }
 
   @media (prefers-reduced-motion: reduce) {
