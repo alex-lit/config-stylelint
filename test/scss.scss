@@ -143,13 +143,7 @@ header {
   .f {
   }
 
-  * {
-  }
-
-  &[tewst] {
-  }
-
-  [tewst] {
+  &.f {
   }
 
   + .ui-button {
@@ -186,9 +180,6 @@ header {
     }
   }
 
-  &.f {
-  }
-
   &.ui-button {
     + a {
       margin-left: var(--ui-button-padding);
@@ -199,24 +190,17 @@ header {
     }
   }
 
-  &--size {
-    &--small {
-      --ui-button-padding: 8px;
-      --ui-button-font-size: 14px;
-      --ui-button-line-height: 1.14;
-    }
+  * {
+  }
 
-    &--default {
-      --ui-button-padding: 8px;
-      --ui-button-font-size: 16px;
-      --ui-button-line-height: 1.5;
-    }
+  &[tewst] {
+  }
 
-    &--large {
-      --ui-button-padding: 16px;
-      --ui-button-font-size: 20px;
-      --ui-button-line-height: 1.2;
-    }
+  [tewst] {
+  }
+
+  &--block {
+    width: 100%;
   }
 
   &--color {
@@ -256,8 +240,24 @@ header {
     }
   }
 
-  &--block {
-    width: 100%;
+  &--size {
+    &--default {
+      --ui-button-padding: 8px;
+      --ui-button-font-size: 16px;
+      --ui-button-line-height: 1.5;
+    }
+
+    &--large {
+      --ui-button-padding: 16px;
+      --ui-button-font-size: 20px;
+      --ui-button-line-height: 1.2;
+    }
+
+    &--small {
+      --ui-button-padding: 8px;
+      --ui-button-font-size: 14px;
+      --ui-button-line-height: 1.14;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
