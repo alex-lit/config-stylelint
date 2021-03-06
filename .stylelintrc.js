@@ -1,5 +1,17 @@
 /* eslint-disable unicorn/no-null */
 module.exports = {
+  extends: [
+    'stylelint-config-standard',
+    ...[
+      './plugins/a11y',
+      './plugins/declaration-block-no-ignored-properties',
+      './plugins/high-performance-animation',
+      './plugins/order',
+      './plugins/scss',
+      './plugins/prettier',
+    ].map((config) => require.resolve(config)),
+  ],
+
   ignoreFiles: [
     '.*/**',
     'build/**',
@@ -7,16 +19,6 @@ module.exports = {
     'docs/**',
     'node_modules/**',
     'storybook-*/**',
-  ],
-
-  extends: [
-    'stylelint-config-standard',
-    require.resolve('./plugins/a11y'),
-    require.resolve('./plugins/declaration-block-no-ignored-properties'),
-    require.resolve('./plugins/high-performance-animation'),
-    require.resolve('./plugins/order'),
-    require.resolve('./plugins/scss'),
-    require.resolve('./plugins/prettier'),
   ],
 
   rules: {
@@ -38,20 +40,20 @@ module.exports = {
     'declaration-block-no-redundant-longhand-properties': null,
     'function-url-quotes': 'always',
     indentation: null,
-    'no-descending-specificity': null,
-    'no-empty-source': null,
-    'no-missing-end-of-source-newline': null,
-    'number-leading-zero': 'always',
     'max-nesting-depth': [
       6,
       {
         ignoreAtRules: ['each', 'media', 'supports', 'include'],
       },
     ],
-    'media-feature-name-no-vendor-prefix': true,
     'media-feature-name-no-unknown': [true, { ignoreMediaFeatureNames: [] }],
-    'property-no-vendor-prefix': true,
+    'media-feature-name-no-vendor-prefix': true,
+    'no-descending-specificity': null,
+    'no-empty-source': null,
+    'no-missing-end-of-source-newline': null,
+    'number-leading-zero': 'always',
     'property-no-unknown': [true, { ignoreProperties: [] }],
+    'property-no-vendor-prefix': true,
     'rule-empty-line-before': [
       'always',
       {
@@ -63,7 +65,7 @@ module.exports = {
       '^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$',
       {
         message:
-          'Selector should be written in BEM "block-name__element-name--modifier--value" (selector-class-pattern)',
+          'Selector should be written in BEM "block__element--modifier--value" (selector-class-pattern)',
       },
     ],
     'selector-combinator-disallowed-list': ['>>>', '/deep/'],
