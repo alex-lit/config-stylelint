@@ -20,6 +20,7 @@ module.exports = {
     'scss/no-duplicate-mixins': true,
     'scss/percent-placeholder-pattern': KEBAB_CASE_PATTERN,
     'scss/selector-nest-combinators': 'always',
+
     'scss/selector-no-redundant-nesting-selector': [
       true,
       { ignoreKeywords: [] },

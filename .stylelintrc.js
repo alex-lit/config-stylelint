@@ -23,12 +23,14 @@ module.exports = {
 
   rules: {
     'at-rule-disallowed-list': ['debug'],
+
     'at-rule-empty-line-before': [
       'always',
       {
         except: ['blockless-after-same-name-blockless', 'first-nested'],
       },
     ],
+
     'at-rule-no-unknown': null,
     'at-rule-no-vendor-prefix': true,
     'block-no-empty': null,
@@ -40,12 +42,14 @@ module.exports = {
     'declaration-block-no-redundant-longhand-properties': null,
     'function-url-quotes': 'always',
     indentation: null,
+
     'max-nesting-depth': [
       6,
       {
         ignoreAtRules: ['each', 'media', 'supports', 'include'],
       },
     ],
+
     'media-feature-name-no-unknown': [true, { ignoreMediaFeatureNames: [] }],
     'media-feature-name-no-vendor-prefix': true,
     'no-descending-specificity': null,
@@ -54,6 +58,7 @@ module.exports = {
     'number-leading-zero': 'always',
     'property-no-unknown': [true, { ignoreProperties: [] }],
     'property-no-vendor-prefix': true,
+
     'rule-empty-line-before': [
       'always',
       {
@@ -61,22 +66,26 @@ module.exports = {
         ignore: [],
       },
     ],
+
     'selector-class-pattern': [
       '^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$',
       {
         message:
-          'Selector should be written in BEM "block__element--modifier--value" (selector-class-pattern)',
+          'Selector should be written as BEM "block__element--modifier--value" (selector-class-pattern)',
       },
     ],
+
     'selector-combinator-disallowed-list': ['>>>', '/deep/'],
     'selector-max-compound-selectors': 6,
     'selector-max-id': 0,
     'selector-no-vendor-prefix': true,
     'selector-pseudo-element-disallowed-list': ['shadow'],
+
     'selector-pseudo-element-no-unknown': [
       true,
       { ignorePseudoElements: ['v-deep', 'file-selector-button'] },
     ],
+
     'selector-type-no-unknown': [true, { ignoreTypes: ['ymaps'] }],
     'shorthand-property-no-redundant-values': true,
     'string-no-newline': null,

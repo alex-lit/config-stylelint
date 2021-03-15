@@ -567,6 +567,7 @@ module.exports = {
       // Other
       'at-rules',
     ],
+
     'order/properties-alphabetical-order': null,
   },
 };
