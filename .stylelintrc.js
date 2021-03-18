@@ -9,6 +9,9 @@ module.exports = {
       './plugins/order',
       './plugins/scss',
       './plugins/prettier',
+
+      // optional
+      // './plugins/optional/use-logical-spec',
     ].map((config) => require.resolve(config)),
   ],
 
