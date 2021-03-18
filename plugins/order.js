@@ -3,8 +3,6 @@
  * @see [stylelint-order](https://github.com/hudochenkov/stylelint-order)
  */
 module.exports = {
-  extends: ['stylelint-config-idiomatic-order'],
-
   plugins: ['stylelint-order'],
 
   rules: {
@@ -568,6 +566,6 @@ module.exports = {
       'at-rules',
     ],
 
-    'order/properties-alphabetical-order': null,
+    'order/properties-alphabetical-order': true,
   },
 };
