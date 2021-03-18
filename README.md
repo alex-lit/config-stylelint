@@ -15,7 +15,7 @@ module.exports = {
     '@alexlit/config-stylelint',
 
     /* optional */
-    '@alexlit/config-stylelint/plugins/optional/use-logical',
+    '@alexlit/config-stylelint/plugins/optional/use-logical-spec',
   ],
 
   ignoreFiles: [
