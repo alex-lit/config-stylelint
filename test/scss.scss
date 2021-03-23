@@ -123,15 +123,6 @@ header {
   transition-duration: 0s;
   user-select: none;
 
-  &:hover,
-  &:focus {
-    background-color: var(
-      --ui-button-color--h,
-      var(--ui-icon-default-background-color)
-    );
-    text-decoration: none;
-  }
-
   &:active {
     background-color: var(
       --ui-button-color--p,
@@ -151,16 +142,26 @@ header {
     }
   }
 
-  &::before {
-  }
-
-  &::after {
-  }
-
-  &::file-selector-button {
+  &:hover,
+  &:focus {
+    background-color: var(
+      --ui-button-color--h,
+      var(--ui-icon-default-background-color)
+    );
+    text-decoration: none;
   }
 
   &::-moz-range-track {
+  }
+
+  &::after {
+    color: rebeccapurple;
+  }
+
+  &::before {
+  }
+
+  &::file-selector-button {
   }
 
   ::v-deep {
@@ -259,17 +260,17 @@ header {
       border: solid 1px var(--ui-color-input-border);
       color: var(--ui-button-color);
 
-      &:hover,
-      &:focus {
+      &:active {
         color: var(
-          --ui-button-color--h,
+          --ui-button-color--p,
           var(--ui-icon-default-background-color)
         );
       }
 
-      &:active {
+      &:hover,
+      &:focus {
         color: var(
-          --ui-button-color--p,
+          --ui-button-color--h,
           var(--ui-icon-default-background-color)
         );
       }
