@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/alex-lit/config-stylelint/compare/v1.2.0...v1.2.1) (2021-04-01)
+
+### Features
+
+- group rules
+  ([ff129d5](https://github.com/alex-lit/config-stylelint/commit/ff129d56c9ccc029e53647751abcfd588ebe5e67))
+
 # [1.2.0](https://github.com/alex-lit/config-stylelint/compare/v1.1.0...v1.2.0) (2021-03-23)
 
 # [1.1.0](https://github.com/alex-lit/config-stylelint/compare/v1.0.0...v1.1.0) (2021-03-18)
