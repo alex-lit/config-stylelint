@@ -51,12 +51,12 @@
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .dsfds {
+  .test {
     transition: none;
   }
 }
 
-.dsfds {
+.test {
   transition: color 350ms ease-in;
 }
 
@@ -64,16 +64,16 @@
   font-size: 16px;
 }
 
-@import 'dsafasdf';
-@import 'dsafaddsdf';
+@import 'test3';
+@import 'test2';
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .sdf {
+  .test {
     animation: none;
   }
 }
 
-.asdfafasf {
+.test2 {
   animation-name: skew;
 
   @media screen and (prefers-reduced-motion: reduce) {
@@ -123,6 +123,15 @@ header {
   transition-duration: 0s;
   user-select: none;
 
+  &:hover,
+  &:focus {
+    background-color: var(
+      --ui-button-color--h,
+      var(--ui-icon-default-background-color)
+    );
+    text-decoration: none;
+  }
+
   &:active {
     background-color: var(
       --ui-button-color--p,
@@ -142,26 +151,17 @@ header {
     }
   }
 
-  &:hover,
-  &:focus {
-    background-color: var(
-      --ui-button-color--h,
-      var(--ui-icon-default-background-color)
-    );
-    text-decoration: none;
-  }
-
-  &::-moz-range-track {
+  &::before {
   }
 
   &::after {
     color: rebeccapurple;
   }
 
-  &::before {
+  &::file-selector-button {
   }
 
-  &::file-selector-button {
+  &::-moz-range-track {
   }
 
   ::v-deep {
@@ -230,10 +230,10 @@ header {
   * {
   }
 
-  &[tewst] {
+  &[test] {
   }
 
-  [tewst] {
+  [test] {
   }
 
   &--block {
@@ -260,17 +260,17 @@ header {
       border: solid 1px var(--ui-color-input-border);
       color: var(--ui-button-color);
 
-      &:active {
-        color: var(
-          --ui-button-color--p,
-          var(--ui-icon-default-background-color)
-        );
-      }
-
       &:hover,
       &:focus {
         color: var(
           --ui-button-color--h,
+          var(--ui-icon-default-background-color)
+        );
+      }
+
+      &:active {
+        color: var(
+          --ui-button-color--p,
           var(--ui-icon-default-background-color)
         );
       }
@@ -340,7 +340,7 @@ header {
     color: var(--ui-color-placeholder);
   }
 
-  .sdafdf {
+  .test {
     outline: none;
   }
 
