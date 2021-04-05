@@ -1,3 +1,25 @@
+a {
+  background: url('img.png') center {
+    size: auto;
+  } // sdf
+}
+
+$font-weights: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+);
+
+@each $key, $value in $font-weights {
+  $value: map-get($font-weights, $key);
+}
+
+s {
+}
+
+@keyframes slide-right {
+}
+
 @mixin variables {
   --ui-button-icon-size: calc(
     var(--ui-button-font-size) * var(--ui-button-line-height)
@@ -74,8 +96,6 @@
 }
 
 .test2 {
-  animation-name: skew;
-
   @media screen and (prefers-reduced-motion: reduce) {
     animation: none;
   }
@@ -187,17 +207,15 @@ header {
     margin-left: var(--ui-button-padding);
 
     @media ($mobile-l) {
-      margin-left: calc(var(--ui-button-padding) / 2); /* sdf */
+      margin-left: calc(var(--ui-button-padding) / 2);
     }
   }
-
-  /* sdf */
 
   ~ .ui-button {
     margin-left: var(--ui-button-padding);
 
     @media ($mobile-l) {
-      margin-left: calc(var(--ui-button-padding) / 2); /* sdf */
+      margin-left: calc(var(--ui-button-padding) / 2);
     }
   }
 

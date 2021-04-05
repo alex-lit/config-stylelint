@@ -25,6 +25,7 @@ module.exports = {
   ],
 
   rules: {
+    'alpha-value-notation': 'number',
     'at-rule-disallowed-list': ['debug'],
 
     'at-rule-empty-line-before': [
@@ -37,14 +38,18 @@ module.exports = {
     'at-rule-no-unknown': null,
     'at-rule-no-vendor-prefix': true,
     'block-no-empty': null,
+    'color-function-notation': 'modern',
     'color-hex-case': 'lower',
     'color-hex-length': 'short',
     'color-no-hex': true,
     'color-no-invalid-hex': true,
     'custom-property-empty-line-before': null,
+    'custom-property-pattern': '^[a-z]+(-{1,2}[a-z]+)*$',
     'declaration-block-no-redundant-longhand-properties': null,
     'function-url-quotes': 'always',
+    'hue-degree-notation': 'angle',
     indentation: null,
+    'keyframes-name-pattern': '^[a-z]+(-[a-z]+)*$',
 
     'max-nesting-depth': [
       6,
@@ -54,11 +59,14 @@ module.exports = {
     ],
 
     'media-feature-name-no-unknown': [true, { ignoreMediaFeatureNames: [] }],
+
     'media-feature-name-no-vendor-prefix': true,
     'no-descending-specificity': null,
     'no-empty-source': null,
     'no-missing-end-of-source-newline': null,
+    'no-unknown-animations': true,
     'number-leading-zero': 'always',
+    'number-max-precision': 3,
     'property-no-unknown': [true, { ignoreProperties: [] }],
     'property-no-vendor-prefix': true,
 
@@ -79,8 +87,10 @@ module.exports = {
     ],
 
     'selector-combinator-disallowed-list': ['>>>', '/deep/'],
+
     'selector-max-compound-selectors': 6,
     'selector-max-id': 0,
+    'selector-no-qualifying-type': true,
     'selector-no-vendor-prefix': true,
     'selector-pseudo-element-disallowed-list': ['shadow'],
 
@@ -92,6 +102,7 @@ module.exports = {
     'selector-type-no-unknown': [true, { ignoreTypes: ['ymaps'] }],
     'shorthand-property-no-redundant-values': true,
     'string-no-newline': null,
+    'time-min-milliseconds': 16,
     'value-no-vendor-prefix': true,
   },
 };

@@ -23,3 +23,10 @@ module.exports = {
   ],
 };
 ```
+
+## Development
+
+```sh
+# check rules
+npx stylelint-find-new-rules
+```
