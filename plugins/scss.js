@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/no-null */
 const KEBAB_CASE_PATTERN = '^[a-z]+([a-z0-9-]+[a-z0-9]+)?$';
 
 /**
@@ -14,7 +15,7 @@ module.exports = {
     'scss/at-mixin-pattern': KEBAB_CASE_PATTERN,
     'scss/at-rule-no-unknown': [true, { ignoreAtRules: [] }],
     'scss/comment-no-empty': true,
-    'scss/comment-no-loud': false,
+    'scss/comment-no-loud': null,
     'scss/declaration-nested-properties': 'never',
     'scss/declaration-nested-properties-no-divided-groups': true,
     'scss/dollar-variable-pattern': KEBAB_CASE_PATTERN,
