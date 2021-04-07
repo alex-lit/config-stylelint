@@ -14,7 +14,7 @@ module.exports = {
     'scss/at-mixin-pattern': KEBAB_CASE_PATTERN,
     'scss/at-rule-no-unknown': [true, { ignoreAtRules: [] }],
     'scss/comment-no-empty': true,
-    'scss/comment-no-loud': true,
+    'scss/comment-no-loud': false,
     'scss/declaration-nested-properties': 'never',
     'scss/declaration-nested-properties-no-divided-groups': true,
     'scss/dollar-variable-pattern': KEBAB_CASE_PATTERN,
