@@ -90,7 +90,7 @@ module.exports = {
 
     'selector-max-compound-selectors': 6,
     'selector-max-id': 0,
-    'selector-no-qualifying-type': true,
+    'selector-no-qualifying-type': null,
     'selector-no-vendor-prefix': true,
     'selector-pseudo-element-disallowed-list': ['shadow'],
 
