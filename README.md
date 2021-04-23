@@ -26,7 +26,10 @@ module.exports = {
 
 ## Development
 
-```sh
-# check rules
-npx stylelint-find-new-rules
-```
+- Check rules
+
+  ```sh
+  npm run --silent find-new-rules
+  # or
+  npx stylelint-find-new-rules
+  ```
