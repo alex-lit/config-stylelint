@@ -265,7 +265,7 @@ module.exports = {
       // Universal selector
       { selector: /\*/, type: 'rule' },
 
-      // Attribute selector selector
+      // Attribute selector
       { selector: /\[accept/, type: 'rule' },
       { selector: /\[accept-charset/, type: 'rule' },
       { selector: /\[accesskey/, type: 'rule' },

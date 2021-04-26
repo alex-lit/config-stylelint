@@ -1,3 +1,12 @@
+@import 'test3';
+@import 'test2';
+
+.test-s {
+  grid-template-areas:
+    'a a a d'
+    'b b b b';
+}
+
 a {
   background: url('img.png') center {
     size: auto;
@@ -85,9 +94,6 @@ s {
 @mixin font-size-default {
   font-size: 16px;
 }
-
-@import 'test3';
-@import 'test2';
 
 @media screen and (prefers-reduced-motion: reduce) {
   .test {
