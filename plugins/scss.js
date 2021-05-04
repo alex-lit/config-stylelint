@@ -13,7 +13,7 @@ module.exports = {
     'scss/at-import-no-partial-leading-underscore': true,
     'scss/at-import-partial-extension-blacklist': ['scss'],
     'scss/at-mixin-pattern': KEBAB_CASE_PATTERN,
-    'scss/at-rule-no-unknown': [true, { ignoreAtRules: [] }],
+    'scss/at-rule-no-unknown': [true, { ignoreAtRules: ['container'] }],
     'scss/comment-no-empty': true,
     'scss/comment-no-loud': null,
     'scss/declaration-nested-properties': 'never',
