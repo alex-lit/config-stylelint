@@ -39,7 +39,7 @@
     "version": "./node_modules/@alexlit/lint-kit/scripts/version.sh"
   },
   "dependencies": {
-    "stylelint": "^13.13.0",
+    "stylelint": "^13.13.1",
     "stylelint-a11y": "^1.2.3",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",
@@ -52,7 +52,7 @@
     "stylelint-use-nesting": "^3.0.0"
   },
   "devDependencies": {
-    "@alexlit/lint-kit": "^7.0.1",
+    "@alexlit/lint-kit": "^8.0.1",
     "stylelint-find-new-rules": "^3.0.1"
   }
 }
