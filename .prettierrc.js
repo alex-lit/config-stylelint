@@ -1,3 +1,3 @@
 module.exports = {
-  ...require('@alexlit/lint-kit/.prettierrc.js'),
+  ...require('@alexlit/lint-kit/.prettierrc'),
 };

@@ -544,6 +544,7 @@ module.exports = {
 
       // Conditional group rules
       { name: 'media', type: 'at-rule' },
+      { name: 'container', type: 'at-rule' },
       { name: 'supports', type: 'at-rule' },
       { name: 'document', type: 'at-rule' },
 
