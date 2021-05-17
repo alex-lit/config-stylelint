@@ -543,6 +543,7 @@ module.exports = {
       { name: 'nest', type: 'at-rule' }, // postcss
 
       // Conditional group rules
+      { name: 'include', parameter: 'media', type: 'at-rule' }, // Bootstrap media mixins
       { name: 'media', type: 'at-rule' },
       { name: 'container', type: 'at-rule' },
       { name: 'supports', type: 'at-rule' },
