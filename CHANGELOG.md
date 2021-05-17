@@ -1,3 +1,10 @@
+# [3.0.0](https://github.com/alex-lit/config-stylelint/compare/v2.0.4...v3.0.0) (2021-05-17)
+
+### Features
+
+- add stylelint-at-rule-no-children and stylelint-selector-no-empty plugins
+  ([975ea50](https://github.com/alex-lit/config-stylelint/commit/975ea502dbb3f14850b975c9ec8434689140e5be))
+
 ## [2.0.4](https://github.com/alex-lit/config-stylelint/compare/v2.0.3...v2.0.4) (2021-05-17)
 
 ## [2.0.3](https://github.com/alex-lit/config-stylelint/compare/v2.0.2...v2.0.3) (2021-05-14)
