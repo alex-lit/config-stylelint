@@ -39,8 +39,11 @@
     "version": "./node_modules/@alexlit/lint-kit/scripts/version.sh"
   },
   "dependencies": {
+    "i": "^0.3.6",
+    "npm": "^7.13.0",
     "stylelint": "^13.13.1",
     "stylelint-a11y": "^1.2.3",
+    "stylelint-at-rule-no-children": "^0.3.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.3.0",
@@ -48,11 +51,12 @@
     "stylelint-order": "^4.1.0",
     "stylelint-prettier": "^1.2.0",
     "stylelint-scss": "^3.19.0",
+    "stylelint-selector-no-empty": "^1.0.8",
     "stylelint-use-logical-spec": "^3.2.0",
     "stylelint-use-nesting": "^3.0.0"
   },
   "devDependencies": {
-    "@alexlit/lint-kit": "^12.5.0",
+    "@alexlit/lint-kit": "^12.5.1",
     "stylelint-find-new-rules": "^3.0.1"
   }
 }

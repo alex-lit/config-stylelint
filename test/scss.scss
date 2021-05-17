@@ -1,6 +1,23 @@
 @import 'test3';
 @import 'test2';
 
+.saffdsa {
+  display: inline;
+}
+
+.example {
+  color: blue;
+
+  &:hover,
+  &:focus {
+    color: rebeccapurple;
+  }
+
+  @media (min-width: 640px) {
+    color: rebeccapurple;
+  }
+}
+
 .test-s {
   grid-template-areas:
     'a a a d'
@@ -81,24 +98,16 @@ s {
   }
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  .test {
+.test {
+  transition: color 350ms ease-in;
+
+  @media screen and (prefers-reduced-motion: reduce) {
     transition: none;
   }
 }
 
-.test {
-  transition: color 350ms ease-in;
-}
-
 @mixin font-size-default {
   font-size: 16px;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  .test {
-    animation: none;
-  }
 }
 
 .test2 {
@@ -194,12 +203,19 @@ header {
     .test3 {
       .test4 {
         .test5 {
-          @media ($mobile-l) {
-            .test6 {
+          .test6 {
+            @media ($mobile-l) {
             }
           }
         }
       }
+    }
+  }
+
+  .animation {
+    @media (prefers-reduced-motion: reduce) {
+      animation: none;
+      content-visibility: hidden;
     }
   }
 
@@ -321,13 +337,6 @@ header {
     }
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    .animation {
-      animation: none;
-      content-visibility: hidden;
-    }
-  }
-
   @supports {
   }
 }
@@ -358,6 +367,16 @@ header {
     border-color: var(--ui-color-outline);
     box-shadow: inset 0 0 0 1px var(--ui-color-outline);
     outline: none;
+
+    @at-root .ui-textarea[class*='--invalid'] & {
+      border-color: var(--ui-color-danger);
+      box-shadow: inset 0 0 0 1px var(--ui-color-danger);
+    }
+
+    @at-root .ui-textarea[class*='--invalid'] .ui-textarea__prefix + & {
+      border-left-color: var(--ui-color-border);
+      border-left-color: var(--ui-color-danger);
+    }
   }
 
   &::placeholder {
@@ -371,22 +390,6 @@ header {
   &[disabled] {
     background-color: var(--ui-color-light);
     border-color: var(--ui-color-light);
-  }
-
-  @at-root .ui-textarea[class*='--invalid'] & {
-    border-color: var(--ui-color-danger);
-
-    &:focus {
-      box-shadow: inset 0 0 0 1px var(--ui-color-danger);
-    }
-  }
-
-  @at-root .ui-textarea[class*='--invalid'] .ui-textarea__prefix + & {
-    border-left-color: var(--ui-color-border);
-
-    &:focus {
-      border-left-color: var(--ui-color-danger);
-    }
   }
 }
 

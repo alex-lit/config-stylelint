@@ -4,10 +4,13 @@ module.exports = {
     'stylelint-config-standard',
     ...[
       './plugins/a11y',
+      './plugins/at-rule-no-children',
       './plugins/declaration-block-no-ignored-properties',
       './plugins/high-performance-animation',
       './plugins/order',
       './plugins/scss',
+      './plugins/selector-no-empty',
+      './plugins/use-nesting',
       './plugins/prettier',
 
       // optional

@@ -1,0 +1,205 @@
+@mixin variables {
+  --ui-button-icon-size: calc(
+    var(--ui-button-font-size) * var(--ui-button-line-height)
+  );
+  --ui-button-icon-default-background-color: var(
+    --ui-button-background-color,
+    var(--ui-color-primary)
+  );
+  --ui-button-padding: 8px;
+  --ui-button-font-size: 16px;
+  --ui-button-line-height: 1.5;
+  --ui-button-color: white;
+  --ui-button-background-color: currentColor;
+  --ui-button-background-color--h: currentColor;
+  --ui-button-background-color--p: currentColor;
+}
+
+.ui-button {
+  @include variables;
+
+  align-items: center;
+  appearance: none;
+  background-color: var(
+    --ui-button-background-color,
+    var(--ui-button-icon-default-background-color)
+  );
+  border: none;
+  border-radius: 4px;
+  color: var(--ui-button-color);
+  cursor: pointer;
+  display: inline-flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  height: var(--height);
+  letter-spacing: normal;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  user-select: none;
+
+  &:hover {
+    background-color: var(
+      --ui-button-background-color--h,
+      var(--ui-button-icon-default-background-color)
+    );
+  }
+
+  &:active {
+    background-color: var(
+      --ui-button-background-color--p,
+      var(--ui-button-icon-default-background-color)
+    );
+    outline-width: 0;
+  }
+
+  &:focus {
+    background-color: var(
+      --ui-button-background-color--h,
+      var(--ui-button-icon-default-background-color)
+    );
+    outline-width: 0;
+
+    &:active {
+      background-color: var(
+        --ui-button-background-color--p,
+        var(--ui-button-icon-default-background-color)
+      );
+      outline-width: 0;
+    }
+  }
+
+  &:focus-visible {
+    outline-color: var(--ui-button-icon-default-background-color);
+    outline-width: initial;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &--block {
+    width: 100%;
+  }
+
+  &--color {
+    &--light,
+    &--white {
+      --ui-button-icon-size: calc(
+        var(--ui-button-font-size) * var(--ui-button-line-height) - 2px
+      );
+      --ui-button-color: var(--ui-color-secondary);
+
+      border: solid 1px var(--ui-color-input-border);
+
+      &:focus-visible {
+        outline-color: var(--ui-color-input-border);
+      }
+    }
+
+    &--link {
+      --ui-button-icon-size: calc(
+        var(--ui-button-font-size) * var(--ui-button-line-height) - 2px
+      );
+      --ui-button-color: var(--ui-button-background-color);
+
+      background-color: transparent !important;
+      border: solid 1px var(--ui-color-input-border);
+
+      &:hover,
+      &:focus {
+        --ui-button-color: var(
+          --ui-button-background-color--h,
+          var(--ui-button-icon-default-background-color)
+        );
+
+        &:active {
+          --ui-button-color: var(
+            --ui-button-background-color--p,
+            var(--ui-button-icon-default-background-color)
+          );
+        }
+      }
+
+      &:active {
+        --ui-button-color: var(
+          --ui-button-background-color--p,
+          var(--ui-button-icon-default-background-color)
+        );
+      }
+
+      &:focus-visible {
+        outline-color: var(--ui-button-background-color);
+      }
+    }
+  }
+
+  &--size {
+    &--default {
+      --ui-button-padding: 8px;
+      --ui-button-font-size: 16px;
+      --ui-button-line-height: 1.5;
+    }
+
+    &--large {
+      --ui-button-padding: 16px;
+      --ui-button-font-size: 20px;
+      --ui-button-line-height: 1.2;
+    }
+
+    &--small {
+      --ui-button-padding: 8px;
+      --ui-button-font-size: 14px;
+      --ui-button-line-height: 1.14;
+    }
+  }
+}
+
+.ui-button__text-wrap {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  font-size: var(--ui-button-font-size);
+  justify-content: center;
+  line-height: var(--ui-button-line-height);
+  padding: var(--ui-button-padding);
+}
+
+.ui-button__prefix {
+  align-items: center;
+  display: flex;
+  margin-right: 8px;
+
+  &:only-child {
+    margin-right: 0;
+  }
+}
+
+.ui-button__text {
+  position: relative;
+}
+
+.ui-button__suffix {
+  --ui-bitton-suffix-size: calc(
+    calc(var(--ui-button-padding) * 2) + var(--ui-button-icon-size)
+  );
+
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--ui-button-background-color--h, transparent);
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  width: var(--ui-bitton-suffix-size);
+
+  @at-root .ui-button[class*='--color--link'] & {
+    background-color: transparent !important;
+  }
+}
