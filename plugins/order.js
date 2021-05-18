@@ -32,6 +32,18 @@ module.exports = {
       { name: 'include', type: 'at-rule' },
 
       /**
+       * Tailwind apply
+       *
+       * @example
+       * ```scss
+       * .my-component {
+       *   @apply z-50 z-10 container text-left md:text-center justify-center;
+       * }
+       * ```
+       */
+      { name: 'apply', type: 'at-rule' },
+
+      /**
        * SASS variables
        *
        * @example
