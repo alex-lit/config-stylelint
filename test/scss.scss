@@ -13,6 +13,14 @@
     color: rebeccapurple;
   }
 
+  @media ($laptop) {
+    grid-template-columns: 1fr;
+  }
+
+  @media ($mobile-l) {
+    padding: 1rem 0;
+  }
+
   @media (min-width: 640px) {
     color: rebeccapurple;
   }

@@ -554,8 +554,31 @@ module.exports = {
       { name: 'at-root', type: 'at-rule' }, // sass
       { name: 'nest', type: 'at-rule' }, // postcss
 
-      // Conditional group rules
-      { name: 'include', parameter: 'media', type: 'at-rule' }, // Bootstrap media mixins
+      /*  Conditional group rules */
+
+      // bootstrap media mixins
+      { name: 'include', parameter: 'media', type: 'at-rule' },
+
+      // chrome breakpoints
+      { name: 'media', parameter: 'laptop-4k', type: 'at-rule' },
+      { name: 'media', parameter: 'laptop-xl', type: 'at-rule' },
+      { name: 'media', parameter: 'laptop-l', type: 'at-rule' },
+      { name: 'media', parameter: 'laptop', type: 'at-rule' },
+      { name: 'media', parameter: 'tablet', type: 'at-rule' },
+      { name: 'media', parameter: 'mobile-l', type: 'at-rule' },
+      { name: 'media', parameter: 'mobile-m', type: 'at-rule' },
+      { name: 'media', parameter: 'mobile-s', type: 'at-rule' },
+      { name: 'media', parameter: 'mobile', type: 'at-rule' },
+
+      // default breakpoints
+      { name: 'media', parameter: 'xxl', type: 'at-rule' },
+      { name: 'media', parameter: 'xl', type: 'at-rule' },
+      { name: 'media', parameter: 'lg', type: 'at-rule' },
+      { name: 'media', parameter: 'md', type: 'at-rule' },
+      { name: 'media', parameter: 'sm', type: 'at-rule' },
+      { name: 'media', parameter: 'xs', type: 'at-rule' },
+      { name: 'media', parameter: 'xxs', type: 'at-rule' },
+
       { name: 'media', type: 'at-rule' },
       { name: 'container', type: 'at-rule' },
       { name: 'supports', type: 'at-rule' },
