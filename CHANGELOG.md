@@ -1,3 +1,10 @@
+# [4.0.0](https://github.com/alex-lit/config-stylelint/compare/v3.0.2...v4.0.0) (2021-05-27)
+
+### Features
+
+- add no-unresolved-module
+  ([7d61b94](https://github.com/alex-lit/config-stylelint/commit/7d61b9445d72e716c4011949191f1ef12239f67b))
+
 ## [3.0.2](https://github.com/alex-lit/config-stylelint/compare/v3.0.1...v3.0.2) (2021-05-19)
 
 ## [3.0.1](https://github.com/alex-lit/config-stylelint/compare/v3.0.0...v3.0.1) (2021-05-18)
