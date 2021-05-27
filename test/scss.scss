@@ -1,5 +1,4 @@
-@import 'test3';
-@import 'test2';
+@import 'logical';
 
 .saffdsa {
   display: inline;
@@ -33,7 +32,7 @@
 }
 
 a {
-  background: url('img.png') center {
+  background: url('./img.png') center {
     size: auto;
   } // sdf
 }

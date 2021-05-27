@@ -7,6 +7,7 @@ module.exports = {
       './plugins/at-rule-no-children',
       './plugins/declaration-block-no-ignored-properties',
       './plugins/high-performance-animation',
+      './plugins/no-unresolved-module',
       './plugins/order',
       './plugins/scss',
       './plugins/selector-no-empty',
