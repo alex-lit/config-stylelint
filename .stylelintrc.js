@@ -5,15 +5,17 @@ module.exports = {
     ...[
       './plugins/a11y',
       './plugins/at-rule-no-children',
+      './plugins/color-format',
       './plugins/declaration-block-no-ignored-properties',
       './plugins/high-performance-animation',
+      './plugins/no-indistinguishable-colors',
       './plugins/no-nested-media',
       './plugins/no-unresolved-module',
+      './plugins/no-unsupported-browser-features',
       './plugins/order',
       './plugins/scss',
       './plugins/selector-no-empty',
       './plugins/use-nesting',
-      './plugins/no-indistinguishable-colors',
 
       './plugins/prettier',
 
