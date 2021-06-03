@@ -1,3 +1,12 @@
+# [5.0.0](https://github.com/alex-lit/config-stylelint/compare/v4.0.2...v5.0.0) (2021-06-03)
+
+### Features
+
+- **plugin:** add no-indistinguishable-colors
+  ([967c3a8](https://github.com/alex-lit/config-stylelint/commit/967c3a878e88585ec73296d52ab1b2e0e13199f6))
+- **plugin:** add no-nested-media
+  ([1701a5f](https://github.com/alex-lit/config-stylelint/commit/1701a5f047ddda3ee97f9a722c810e30aceaab6d))
+
 ## [4.0.2](https://github.com/alex-lit/config-stylelint/compare/v4.0.1...v4.0.2) (2021-06-03)
 
 ## [4.0.1](https://github.com/alex-lit/config-stylelint/compare/v4.0.0...v4.0.1) (2021-05-31)
