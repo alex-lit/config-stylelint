@@ -7,11 +7,13 @@ module.exports = {
       './plugins/at-rule-no-children',
       './plugins/declaration-block-no-ignored-properties',
       './plugins/high-performance-animation',
+      './plugins/no-nested-media',
       './plugins/no-unresolved-module',
       './plugins/order',
       './plugins/scss',
       './plugins/selector-no-empty',
       './plugins/use-nesting',
+
       './plugins/prettier',
 
       // optional
