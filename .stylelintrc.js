@@ -54,6 +54,7 @@ module.exports = {
     'custom-property-pattern': '^[a-z]+(-{1,2}[a-z]+)*$',
     'declaration-block-no-redundant-longhand-properties': null,
     'function-url-quotes': 'always',
+    'function-url-scheme-disallowed-list': ['/^data/', 'ftp', '/^http/'],
     'hue-degree-notation': 'angle',
     indentation: null,
     'keyframes-name-pattern': '^[a-z]+(-[a-z]+)*$',
