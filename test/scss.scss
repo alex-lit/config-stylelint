@@ -29,15 +29,18 @@
 }
 
 .test-s {
+  color: rgb(3 3 3);
   grid-template-areas:
     'a a a d'
     'b b b b';
 }
 
 a {
-  background: red center {
+  background: black center {
     size: auto;
   } // sdf
+
+  color: black;
 }
 
 $font-weights: (

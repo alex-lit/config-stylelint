@@ -13,6 +13,7 @@ module.exports = {
       './plugins/scss',
       './plugins/selector-no-empty',
       './plugins/use-nesting',
+      './plugins/no-indistinguishable-colors',
 
       './plugins/prettier',
 
