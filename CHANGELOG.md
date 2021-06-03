@@ -1,3 +1,10 @@
+# [6.0.0](https://github.com/alex-lit/config-stylelint/compare/v5.0.0...v6.0.0) (2021-06-03)
+
+### Features
+
+- **plugins:** add no-unsupported-browser-features and color-format
+  ([af0117b](https://github.com/alex-lit/config-stylelint/commit/af0117ba8941025fb2c9c63b3225c46e04c6266e))
+
 # [5.0.0](https://github.com/alex-lit/config-stylelint/compare/v4.0.2...v5.0.0) (2021-06-03)
 
 ### Features
