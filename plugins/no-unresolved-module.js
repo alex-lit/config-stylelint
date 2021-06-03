@@ -6,14 +6,21 @@ module.exports = {
 
   rules: {
     'plugin/no-unresolved-module': {
-      alias: {},
+      alias: {
+        '~assets': 'assets',
+        '~public': 'public',
+        '~static': 'static',
+      },
 
       modules: [
+        'assets',
         'node_modules',
         'public',
+        'src',
         'src/assets',
         'src/public',
         'src/static',
+        'static',
       ],
     },
   },
