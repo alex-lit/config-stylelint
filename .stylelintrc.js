@@ -8,7 +8,6 @@ module.exports = {
       './plugins/color-format',
       './plugins/declaration-block-no-ignored-properties',
       './plugins/high-performance-animation',
-      './plugins/no-indistinguishable-colors',
       './plugins/no-nested-media',
       './plugins/no-unresolved-module',
       './plugins/no-unsupported-browser-features',
@@ -20,6 +19,7 @@ module.exports = {
       './plugins/prettier',
 
       // optional
+      // './plugins/no-indistinguishable-colors',
       // './plugins/optional/use-logical-spec',
     ].map((config) => require.resolve(config)),
   ],

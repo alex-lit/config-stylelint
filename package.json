@@ -59,7 +59,7 @@
     "stylelint-use-nesting": "^3.0.0"
   },
   "devDependencies": {
-    "@alexlit/lint-kit": "^17.0.0",
+    "@alexlit/lint-kit": "^19.1.1",
     "stylelint-find-new-rules": "^3.0.1"
   }
 }
