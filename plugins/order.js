@@ -11,11 +11,11 @@ module.exports = {
        * SASS extend
        *
        * @example
-       * ```scss
-       * .my-component {
-       *   @extend .custom-class;
-       * }
-       * ```
+       *   ```scss
+       *   .my-component {
+       *     @extend .custom-class;
+       *   }
+       *   ```;
        */
       { name: 'extend', type: 'at-rule' },
 
@@ -23,11 +23,11 @@ module.exports = {
        * SASS include
        *
        * @example
-       * ```scss
-       * .my-component {
-       *   @include mixins;
-       * }
-       * ```
+       *   ```scss
+       *   .my-component {
+       *     @include mixins;
+       *   }
+       *   ```;
        */
       { name: 'include', type: 'at-rule' },
 
@@ -35,11 +35,11 @@ module.exports = {
        * Tailwind apply
        *
        * @example
-       * ```scss
-       * .my-component {
-       *   @apply z-50 z-10 container text-left md:text-center justify-center;
-       * }
-       * ```
+       *   ```scss
+       *   .my-component {
+       *     @apply z-50 z-10 container text-left md:text-center justify-center;
+       *   }
+       *   ```;
        */
       { name: 'apply', type: 'at-rule' },
 
@@ -47,11 +47,11 @@ module.exports = {
        * SASS variables
        *
        * @example
-       * ```scss
-       * .my-component {
-       *   $color: red;
-       * }
-       * ```
+       *   ```scss
+       *   .my-component {
+       *     $color: red;
+       *   }
+       *   ```;
        */
       'dollar-variables',
 
@@ -59,11 +59,11 @@ module.exports = {
        * LESS variables
        *
        * @example
-       * ```scss
-       * .my-component {
-       *   @color: red;
-       * }
-       * ```
+       *   ```scss
+       *   .my-component {
+       *     @color: red;
+       *   }
+       *   ```;
        */
       'at-variables',
 
@@ -71,11 +71,11 @@ module.exports = {
        * CSS
        *
        * @example
-       * ```scss
-       * .my-component {
-       *   --color: red;
-       * }
-       * ```
+       *   ```scss
+       *   .my-component {
+       *     --color: red;
+       *   }
+       *   ```;
        */
       'custom-properties',
 
@@ -83,11 +83,11 @@ module.exports = {
        * Declarations
        *
        * @example
-       * ```scss
-       * .my-component {
-       *   color: red;
-       * }
-       * ```
+       *   ```scss
+       *   .my-component {
+       *     color: red;
+       *   }
+       *   ```;
        */
       'declarations',
 
@@ -95,11 +95,11 @@ module.exports = {
        * Properties
        *
        * @example
-       * ```scss
-       * .my-component {
-       *   &:empty {}
-       * }
-       * ```
+       *   ```scss
+       *   .my-component {
+       *     &:empty {}
+       *   }
+       *   ```;
        */
       // Linguistic pseudo-classes
       { selector: ':dir', type: 'rule' },
@@ -181,11 +181,11 @@ module.exports = {
        * Pseudo elements
        *
        * @example
-       * ```scss
-       * .my-component {
-       *   &::before {}
-       * }
-       * ```
+       *   ```scss
+       *   .my-component {
+       *     &::before {}
+       *   }
+       *   ```;
        */
       // Elements
       { selector: '::before', type: 'rule' },
@@ -235,11 +235,10 @@ module.exports = {
       /**
        * Basic selectors
        *
-       *
        * @example
-       * ```scss
-       * .my-component {}
-       * ```
+       *   ```scss
+       *   .my-component {}
+       *   ```;
        */
 
       // Class selector
@@ -450,11 +449,11 @@ module.exports = {
        * Combinators
        *
        * @example
-       * ```scss
-       * .my-component {
-       *   + a {}
-       * }
-       * ```
+       *   ```scss
+       *   .my-component {
+       *     + a {}
+       *   }
+       *   ```;
        */
 
       // Adjacent sibling combinator
@@ -476,12 +475,12 @@ module.exports = {
        * BEM class
        *
        * @example
-       * ```scss
-       * .my-component {
-       *   &__element {}
-       *   &--modifier {}
-       * }
-       * ```
+       *   ```scss
+       *   .my-component {
+       *     &__element {}
+       *     &--modifier {}
+       *   }
+       *   ```;
        */
       { selector: /__a/, type: 'rule' },
       { selector: /__b/, type: 'rule' },
@@ -543,11 +542,11 @@ module.exports = {
        * At rules
        *
        * @example
-       * ```scss
-       * .my-component {
-       *   @media screen and (max-width: 992px) {}
-       * }
-       * ```
+       *   ```scss
+       *   .my-component {
+       *     @media screen and (max-width: 992px) {}
+       *   }
+       *   ```;
        */
 
       // Root
