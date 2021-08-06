@@ -7,10 +7,11 @@ module.exports = {
 
   rules: {
     'csstree/validator': {
-      ignoreValue: 'scale-color',
+      ignoreValue: '(scale-color|clamp)',
 
       properties: {
         'content-visibility': 'visible | auto | hidden', // webkit
+        'font-display': 'auto | block | swap | fallback | optional', // experimental
       },
     },
   },
