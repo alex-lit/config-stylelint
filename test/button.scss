@@ -43,6 +43,7 @@
   text-decoration: none;
   transition-duration: 0.1s;
   user-select: none;
+  width: max(200px, 100%);
   width: clamp(100px, 20vw, 208px);
 
   &:hover {
