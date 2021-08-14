@@ -26,7 +26,6 @@
     "plugins"
   ],
   "scripts": {
-    "find-new-rules": "./scripts/find-new-rules.sh",
     "lint": "./node_modules/@alexlit/lint-kit/scripts/lint.sh",
     "lint:eslint": "./node_modules/@alexlit/lint-kit/scripts/lint.eslint.sh",
     "lint:htmllint": "./node_modules/@alexlit/lint-kit/scripts/lint.htmllint.sh",
@@ -60,7 +59,6 @@
     "stylelint-use-nesting": "^3.0.0"
   },
   "devDependencies": {
-    "@alexlit/lint-kit": "^27.0.3",
-    "stylelint-find-new-rules": "^3.0.1"
+    "@alexlit/lint-kit": "^27.0.3"
   }
 }
