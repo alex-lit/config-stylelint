@@ -7,11 +7,6 @@
 .example {
   color: rgb(0 0 0);
 
-  &:hover,
-  &:focus {
-    color: rebeccapurple;
-  }
-
   @media ($laptop) {
     grid-template-columns: 1fr;
   }
@@ -24,6 +19,11 @@
   }
 
   @media (min-width: 640px) {
+    color: rebeccapurple;
+  }
+
+  &:hover,
+  &:focus {
     color: rebeccapurple;
   }
 }
@@ -166,6 +166,9 @@ header {
   top: 0;
   transition-duration: 0s;
   user-select: none;
+
+  @supports {
+  }
 
   &:hover,
   &:focus {
@@ -344,9 +347,6 @@ header {
       --ui-button-font-size: 14px;
       --ui-button-line-height: 1.14;
     }
-  }
-
-  @supports {
   }
 }
 

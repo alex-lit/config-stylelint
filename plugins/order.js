@@ -92,6 +92,68 @@ module.exports = {
       'declarations',
 
       /**
+       * At rules
+       *
+       * @example
+       *   ```scss
+       *   .my-component {
+       *     @media screen and (max-width: 992px) {}
+       *   }
+       *   ```;
+       */
+
+      // Root
+      { name: 'at-root', type: 'at-rule' }, // sass
+      { name: 'nest', type: 'at-rule' }, // postcss
+
+      // Bootstrap media mixins
+      { name: 'include', parameter: 'media', type: 'at-rule' },
+
+      // Chrome breakpoints
+      { name: 'media', parameter: 'laptop-4k', type: 'at-rule' },
+      { name: 'media', parameter: 'laptop-xl', type: 'at-rule' },
+      { name: 'media', parameter: 'laptop-l', type: 'at-rule' },
+      { name: 'media', parameter: 'laptop', type: 'at-rule' },
+      { name: 'media', parameter: 'tablet', type: 'at-rule' },
+      { name: 'media', parameter: 'mobile-l', type: 'at-rule' },
+      { name: 'media', parameter: 'mobile-m', type: 'at-rule' },
+      { name: 'media', parameter: 'mobile-s', type: 'at-rule' },
+      { name: 'media', parameter: 'mobile', type: 'at-rule' },
+
+      // Default breakpoints
+      { name: 'media', parameter: 'xxl', type: 'at-rule' },
+      { name: 'media', parameter: 'xl', type: 'at-rule' },
+      { name: 'media', parameter: 'lg', type: 'at-rule' },
+      { name: 'media', parameter: 'md', type: 'at-rule' },
+      { name: 'media', parameter: 'sm', type: 'at-rule' },
+      { name: 'media', parameter: 'xs', type: 'at-rule' },
+      { name: 'media', parameter: 'xxs', type: 'at-rule' },
+
+      { name: 'media', type: 'at-rule' },
+      { name: 'container', type: 'at-rule' },
+      { name: 'supports', type: 'at-rule' },
+      { name: 'document', type: 'at-rule' },
+
+      // Nested
+      { name: 'page', type: 'at-rule' },
+      { name: 'font-face', type: 'at-rule' },
+      { name: 'keyframes', type: 'at-rule' },
+      { name: 'viewport', type: 'at-rule' },
+      { name: 'counter-style', type: 'at-rule' },
+
+      // Font-feature
+      { name: 'font-feature-values', type: 'at-rule' },
+      { name: 'swash', type: 'at-rule' },
+      { name: 'ornaments', type: 'at-rule' },
+      { name: 'annotation', type: 'at-rule' },
+      { name: 'stylistic', type: 'at-rule' },
+      { name: 'styleset', type: 'at-rule' },
+      { name: 'character-variant', type: 'at-rule' },
+
+      // Other at-rules
+      'at-rules',
+
+      /**
        * Properties
        *
        * @example
@@ -537,70 +599,6 @@ module.exports = {
       { selector: /--w/, type: 'rule' },
       { selector: /--z/, type: 'rule' },
       { selector: /--/, type: 'rule' },
-
-      /**
-       * At rules
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     @media screen and (max-width: 992px) {}
-       *   }
-       *   ```;
-       */
-
-      // Root
-      { name: 'at-root', type: 'at-rule' }, // sass
-      { name: 'nest', type: 'at-rule' }, // postcss
-
-      /*  Conditional group rules */
-
-      // bootstrap media mixins
-      { name: 'include', parameter: 'media', type: 'at-rule' },
-
-      // chrome breakpoints
-      { name: 'media', parameter: 'laptop-4k', type: 'at-rule' },
-      { name: 'media', parameter: 'laptop-xl', type: 'at-rule' },
-      { name: 'media', parameter: 'laptop-l', type: 'at-rule' },
-      { name: 'media', parameter: 'laptop', type: 'at-rule' },
-      { name: 'media', parameter: 'tablet', type: 'at-rule' },
-      { name: 'media', parameter: 'mobile-l', type: 'at-rule' },
-      { name: 'media', parameter: 'mobile-m', type: 'at-rule' },
-      { name: 'media', parameter: 'mobile-s', type: 'at-rule' },
-      { name: 'media', parameter: 'mobile', type: 'at-rule' },
-
-      // default breakpoints
-      { name: 'media', parameter: 'xxl', type: 'at-rule' },
-      { name: 'media', parameter: 'xl', type: 'at-rule' },
-      { name: 'media', parameter: 'lg', type: 'at-rule' },
-      { name: 'media', parameter: 'md', type: 'at-rule' },
-      { name: 'media', parameter: 'sm', type: 'at-rule' },
-      { name: 'media', parameter: 'xs', type: 'at-rule' },
-      { name: 'media', parameter: 'xxs', type: 'at-rule' },
-
-      { name: 'media', type: 'at-rule' },
-      { name: 'container', type: 'at-rule' },
-      { name: 'supports', type: 'at-rule' },
-      { name: 'document', type: 'at-rule' },
-
-      // Nested
-      { name: 'page', type: 'at-rule' },
-      { name: 'font-face', type: 'at-rule' },
-      { name: 'keyframes', type: 'at-rule' },
-      { name: 'viewport', type: 'at-rule' },
-      { name: 'counter-style', type: 'at-rule' },
-
-      // Font-feature
-      { name: 'font-feature-values', type: 'at-rule' },
-      { name: 'swash', type: 'at-rule' },
-      { name: 'ornaments', type: 'at-rule' },
-      { name: 'annotation', type: 'at-rule' },
-      { name: 'stylistic', type: 'at-rule' },
-      { name: 'styleset', type: 'at-rule' },
-      { name: 'character-variant', type: 'at-rule' },
-
-      // Other
-      'at-rules',
     ],
 
     'order/properties-alphabetical-order': true,
