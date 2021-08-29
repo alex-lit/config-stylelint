@@ -18,6 +18,8 @@
 .ui-button {
   @include variables;
 
+  --ui-button-background-color: red;
+
   align-items: center;
   appearance: none;
   background-color: var(
@@ -26,7 +28,7 @@
   );
   border: none;
   border-radius: 4px;
-  color: var(--ui-button-color);
+  color: v-bind(color);
   cursor: pointer;
   display: inline-flex;
   flex-grow: 0;
