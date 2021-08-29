@@ -1,3 +1,55 @@
+## 7.1.1 (2021-08-29)
+
+### Bug Fixes
+
+- disable no-empty-source rule
+  ([becf8d3](https://github.com/alex-lit/config-stylelint/commit/becf8d3259e3a46ace2f8e1bc2b82fe9fc87f128))
+- **order:** move bem order
+  ([0c422ce](https://github.com/alex-lit/config-stylelint/commit/0c422ce39ebfa185c6769bb8e7af3f5b22a36130))
+- remove buggy bem element selector ryle
+  ([1d44ef7](https://github.com/alex-lit/config-stylelint/commit/1d44ef71b2b5752b6b7f679acbc0c4a15ea25144))
+
+### Features
+
+- add no-unresolved-module
+  ([7d61b94](https://github.com/alex-lit/config-stylelint/commit/7d61b9445d72e716c4011949191f1ef12239f67b))
+- add stylelint-at-rule-no-children and stylelint-selector-no-empty plugins
+  ([975ea50](https://github.com/alex-lit/config-stylelint/commit/975ea502dbb3f14850b975c9ec8434689140e5be))
+- add stylelint-declaration-block-no-ignored-properties plugin
+  ([164a4ac](https://github.com/alex-lit/config-stylelint/commit/164a4aca649233ed4f22c11e8efef0ce0a14cff6))
+- add stylelint-high-performance-animation plugin
+  ([165f67e](https://github.com/alex-lit/config-stylelint/commit/165f67e38c332d8b0736ae6034d64a7212b0043b))
+- add use-logical plugin
+  ([15eb2ff](https://github.com/alex-lit/config-stylelint/commit/15eb2ff570a58da12c28f3bc646352653bee2dd6))
+- ally plugin
+  ([92a3ccf](https://github.com/alex-lit/config-stylelint/commit/92a3ccff0fd5102bdd78b968b10a2b31d7b13125))
+- extend order rules
+  ([db935e3](https://github.com/alex-lit/config-stylelint/commit/db935e30bbcb8326d51f75ac83e2107e8c2a9e27))
+- group media before nested
+  ([61e4204](https://github.com/alex-lit/config-stylelint/commit/61e420495ac0583eb839eef54eae2d3748129ad9))
+- group rules
+  ([ff129d5](https://github.com/alex-lit/config-stylelint/commit/ff129d56c9ccc029e53647751abcfd588ebe5e67))
+- **order:** extend pseudos
+  ([048284c](https://github.com/alex-lit/config-stylelint/commit/048284cb0ab3d0a3ee9c907ba3dd17329b515ed3))
+- **order:** extend rules
+  ([8525ece](https://github.com/alex-lit/config-stylelint/commit/8525eceffe4de985482e4e4ed2045b6444be020c))
+- **plugin:** add csstree-validator
+  ([c832275](https://github.com/alex-lit/config-stylelint/commit/c832275f04fc64b8f910cf6fc5ced271fc703cd4))
+- **plugin:** add no-indistinguishable-colors
+  ([967c3a8](https://github.com/alex-lit/config-stylelint/commit/967c3a878e88585ec73296d52ab1b2e0e13199f6))
+- **plugin:** add no-nested-media
+  ([1701a5f](https://github.com/alex-lit/config-stylelint/commit/1701a5f047ddda3ee97f9a722c810e30aceaab6d))
+- **plugins:** add no-unsupported-browser-features and color-format
+  ([af0117b](https://github.com/alex-lit/config-stylelint/commit/af0117ba8941025fb2c9c63b3225c46e04c6266e))
+- **readme:** add title
+  ([5a36c3d](https://github.com/alex-lit/config-stylelint/commit/5a36c3d123caae3897838d8dd521e1cbec3f604e))
+- **scss:** add at-extend-no-missing-placeholder rule
+  ([53d31d0](https://github.com/alex-lit/config-stylelint/commit/53d31d0d3415a7a2b83f437a3a5d10c8e3f9af3c))
+- **scss:** extend rules
+  ([af17ab0](https://github.com/alex-lit/config-stylelint/commit/af17ab0f93c83fe94264f2a9ba7c1b12fbf99987))
+- **stylelint-order:** extend order rules
+  ([23abac9](https://github.com/alex-lit/config-stylelint/commit/23abac995add99e9953a454e22670b500887cf17))
+
 # 7.1.0 (2021-08-17)
 
 ### Bug Fixes
