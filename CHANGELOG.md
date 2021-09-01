@@ -1,3 +1,5 @@
+## [7.1.2](https://github.com/alex-lit/config-stylelint/compare/v7.1.1...v7.1.2) (2021-09-01)
+
 ## 7.1.1 (2021-08-29)
 
 ### Bug Fixes
