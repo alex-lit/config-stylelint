@@ -1,4 +1,4 @@
-/* eslint-disable unicorn/no-null */
+/* eslint-disable sonarjs/no-duplicate-string, unicorn/no-null */
 module.exports = {
   extends: [
     'stylelint-config-standard',
@@ -53,7 +53,14 @@ module.exports = {
     'color-hex-length': 'short',
     'color-no-hex': true,
     'color-no-invalid-hex': true,
-    'custom-property-empty-line-before': null,
+
+    'custom-property-empty-line-before': [
+      'always',
+      {
+        except: ['after-custom-property', 'first-nested'],
+      },
+    ],
+
     'custom-property-pattern': '^[a-z]+(-{1,2}[a-z]+)*$',
     'declaration-block-no-redundant-longhand-properties': null,
     'function-url-quotes': 'always',
