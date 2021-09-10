@@ -42,6 +42,7 @@ module.exports = {
       'always',
       {
         except: ['blockless-after-same-name-blockless', 'first-nested'],
+        ignoreAtRules: ['else'],
       },
     ],
 
@@ -57,12 +58,13 @@ module.exports = {
     'custom-property-empty-line-before': [
       'always',
       {
-        except: ['after-custom-property', 'first-nested'],
+        except: ['after-comment', 'after-custom-property', 'first-nested'],
       },
     ],
 
     'custom-property-pattern': '^[a-z]+(-{1,2}[a-z]+)*$',
     'declaration-block-no-redundant-longhand-properties': null,
+    'font-family-name-quotes': 'always-unless-keyword',
     'function-url-quotes': 'always',
     'function-url-scheme-disallowed-list': ['/^data/', 'ftp', '/^http/'],
     'hue-degree-notation': 'angle',

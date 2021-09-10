@@ -1,4 +1,13 @@
+@import 'logical';
+
+$test1: blue !default;
+$test2: blue !default;
+$test3: blue !default;
+
 @mixin variables {
+  $a: blue !default;
+  $box-shadow: 0 0 0 1px rgb(91 157 217), 0 0 2px 1px rgb(30 140 190 / 0.8);
+
   --ui-button-icon-size: calc(
     var(--ui-button-font-size) * var(--ui-button-line-height)
   );
@@ -6,6 +15,7 @@
     --ui-button-background-color,
     var(--ui-color-primary)
   );
+  // comment
   --ui-button-padding: 8px;
   --ui-button-font-size: 16px;
   --ui-button-line-height: 1.5;
@@ -13,12 +23,43 @@
   --ui-button-background-color: currentColor;
   --ui-button-background-color--h: currentColor;
   --ui-button-background-color--p: currentColor;
+
+  font-family: 'Helvetica', serif;
+}
+
+a {
+  background: adjust-color(red, $red: 15);
+  font-family: 'Times New Roman', 'Ancient Runes', serif;
+}
+
+@mixin triangle($size, $color, $direction) {
+  border-color: transparent;
+  border-style: solid;
+  height: 0;
+  width: 0;
+
+  @if $direction == up {
+    border-bottom-color: $color;
+  } @else if ($direction) == right {
+    border-left-color: $color;
+  } @else if $direction == down {
+    border-top-color: $color;
+  } @else if $direction == left {
+    border-right-color: $color;
+  } @else {
+    @error "Unknown direction #{$direction}.";
+  }
 }
 
 .ui-button {
-  @include variables;
+  $box-shadow: 0 0 0 1px rgb(91 157 217), 0 0 2px 1px rgb(30 140 190 / 0.8);
+  $xxx: 0 0 0 1px rgb(91 157 217), 0 0 2px 1px rgb(30 140 190 / 0.8);
+  $yyy: 0 0 0 1px rgb(91 157 217), 0 0 2px 1px rgb(30 140 190 / 0.8);
+  $zzz: 0 0 0 1px rgb(91 157 217), 0 0 2px 1px rgb(30 140 190 / 0.8);
 
-  --ui-button-background-color: red;
+  @include variables();
+
+  --ui-button-background-color: blue;
 
   align-items: center;
   appearance: none;
@@ -40,6 +81,7 @@
   font-weight: 600;
   height: var(--height);
   letter-spacing: normal;
+  padding: #{value} * 1px;
   position: relative;
   text-align: center;
   text-decoration: none;

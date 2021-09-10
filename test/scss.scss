@@ -1,5 +1,11 @@
 @import 'logical';
 
+$font-weights: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+) !default;
+
 .example-1 {
   display: inline;
 }
@@ -38,12 +44,6 @@
 a {
   color: black;
 }
-
-$font-weights: (
-  'regular': 400,
-  'medium': 500,
-  'bold': 700,
-);
 
 @each $key, $value in $font-weights {
   $value: map-get($font-weights, $key);
@@ -134,11 +134,11 @@ header {
 .l__button--3 {
   @extend %sdf;
 
-  @include ddf;
-  @include variables;
-  @include ddf;
-  @include ddf;
-  @include ddf;
+  @include ddf();
+  @include variables();
+  @include ddf();
+  @include ddf();
+  @include ddf();
 
   align-items: center;
   appearance: none;

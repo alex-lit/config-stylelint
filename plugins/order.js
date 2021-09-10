@@ -8,6 +8,30 @@ module.exports = {
   rules: {
     'order/order': [
       /**
+       * SASS variables
+       *
+       * @example
+       *   ```scss
+       *   .my-component {
+       *     $color: red;
+       *   }
+       *   ```;
+       */
+      'dollar-variables',
+
+      /**
+       * LESS variables
+       *
+       * @example
+       *   ```scss
+       *   .my-component {
+       *     @color: red;
+       *   }
+       *   ```;
+       */
+      'at-variables',
+
+      /**
        * SASS extend
        *
        * @example
@@ -42,30 +66,6 @@ module.exports = {
        *   ```;
        */
       { name: 'apply', type: 'at-rule' },
-
-      /**
-       * SASS variables
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     $color: red;
-       *   }
-       *   ```;
-       */
-      'dollar-variables',
-
-      /**
-       * LESS variables
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     @color: red;
-       *   }
-       *   ```;
-       */
-      'at-variables',
 
       /**
        * CSS

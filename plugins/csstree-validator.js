@@ -7,7 +7,7 @@ module.exports = {
 
   rules: {
     'csstree/validator': {
-      ignoreValue: /^(clamp|max|min|scale-color|v-bind)\(/,
+      ignoreValue: /^(clamp|max|min|quote|scale-color|unquote|v-bind)\(/,
 
       properties: {
         'content-visibility': 'visible | auto | hidden', // webkit
