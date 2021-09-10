@@ -13,7 +13,7 @@ module.exports = {
     'scss/at-function-pattern': KEBAB_CASE_PATTERN,
     'scss/at-if-no-null': true,
     'scss/at-import-no-partial-leading-underscore': true,
-    'scss/at-import-partial-extension': 'never',
+    'scss/at-import-partial-extension': 'always',
     'scss/at-mixin-argumentless-call-parentheses': 'always',
     'scss/at-mixin-named-arguments': 'always',
     'scss/at-mixin-parentheses-space-before': 'never',
