@@ -7,7 +7,7 @@ module.exports = {
   rules: {
     'aditayvm/at-rule-no-children': [
       {
-        ignore: ['for', 'each', 'while'],
+        ignore: ['for', 'each', 'mixin', 'while'],
         severity: 'error',
       },
     ],
