@@ -120,7 +120,7 @@ module.exports = {
       { name: 'media', parameter: 'mobile-s', type: 'at-rule' },
       { name: 'media', parameter: 'mobile', type: 'at-rule' },
 
-      // Default breakpoints
+      // Default breakpoints (bootstrap like)
       { name: 'media', parameter: 'xxl', type: 'at-rule' },
       { name: 'media', parameter: 'xl', type: 'at-rule' },
       { name: 'media', parameter: 'lg', type: 'at-rule' },
