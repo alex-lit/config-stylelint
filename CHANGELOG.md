@@ -1,3 +1,5 @@
+# [8.0.0](https://github.com/alex-lit/config-stylelint/compare/v7.3.2...v8.0.0) (2021-10-13)
+
 ## [7.3.2](https://github.com/alex-lit/config-stylelint/compare/v7.3.1...v7.3.2) (2021-09-24)
 
 ## [7.3.1](https://github.com/alex-lit/config-stylelint/compare/v7.3.0...v7.3.1) (2021-09-15)
