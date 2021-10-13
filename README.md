@@ -32,3 +32,9 @@ module.exports = {
   ```sh
   npx stylelint-find-new-rules
   ```
+
+  - Check rules that are in conflict with Prettier
+
+  ```sh
+  npx stylelint-config-prettier-check
+  ```
