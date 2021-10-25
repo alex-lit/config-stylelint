@@ -1,3 +1,10 @@
+# [9.0.0](https://github.com/alex-lit/config-stylelint/compare/v8.0.1...v9.0.0) (2021-10-25)
+
+### Features
+
+- migrate to stylelint v14
+  ([8f9d491](https://github.com/alex-lit/config-stylelint/commit/8f9d4912796d5cff440541d7cf5783a97aa4547e))
+
 ## [8.0.1](https://github.com/alex-lit/config-stylelint/compare/v8.0.0...v8.0.1) (2021-10-15)
 
 # [8.0.0](https://github.com/alex-lit/config-stylelint/compare/v7.3.2...v8.0.0) (2021-10-13)
