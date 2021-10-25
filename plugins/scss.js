@@ -5,6 +5,8 @@ const KEBAB_CASE_PATTERN = '^[a-z]+([a-z0-9-]+[a-z0-9]+)?$';
  * @see [stylelint-scss](https://github.com/kristerkari/stylelint-scss)
  */
 module.exports = {
+  extends: ['stylelint-config-standard-scss'],
+
   plugins: ['stylelint-scss'],
 
   rules: {
@@ -29,7 +31,9 @@ module.exports = {
 
     'scss/dollar-variable-empty-line-before': [
       'always',
-      { except: ['first-nested', 'after-comment', 'after-dollar-variable'] },
+      {
+        except: ['first-nested', 'after-comment', 'after-dollar-variable'],
+      },
     ],
 
     'scss/dollar-variable-first-in-block': [

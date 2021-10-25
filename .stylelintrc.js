@@ -16,6 +16,7 @@ module.exports = {
       './plugins/scss',
       './plugins/selector-no-empty',
       './plugins/use-nesting',
+      './plugins/vue',
 
       './plugins/prettier',
 

@@ -1,6 +1,8 @@
 @import 'logical.scss';
 
-$test1: blue !default;
+@use 'sass:color';
+@use 'sass:math';
+
 $test2: blue !default;
 $test3: blue !default;
 
@@ -15,6 +17,7 @@ $test3: blue !default;
     --ui-button-background-color,
     var(--ui-color-primary)
   );
+
   // comment
   --ui-button-padding: 8px;
   --ui-button-font-size: 16px;
@@ -28,7 +31,6 @@ $test3: blue !default;
 }
 
 a {
-  background: adjust-color(red, $red: 15);
   color: rgb(255 0 255);
   font-family: 'Times New Roman', 'Ancient Runes', serif;
 }
@@ -88,7 +90,7 @@ a {
   text-decoration: none;
   transition-duration: 0.1s;
   user-select: none;
-  width: max(200px, 100%);
+  width: max(200px, 100%); /* stylelint-disable-line */
   width: clamp(100px, 20vw, 208px);
 
   &:hover {
