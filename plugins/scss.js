@@ -53,6 +53,7 @@ module.exports = {
     'scss/map-keys-quotes': 'always',
     'scss/no-duplicate-dollar-variables': true,
     'scss/no-duplicate-mixins': true,
+    'scss/no-global-function-names': null,
     'scss/operator-no-unspaced': true,
     'scss/percent-placeholder-pattern': KEBAB_CASE_PATTERN,
     'scss/selector-nest-combinators': 'always',
