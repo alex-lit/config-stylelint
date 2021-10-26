@@ -45,6 +45,7 @@ module.exports = {
     ],
 
     'scss/dollar-variable-no-missing-interpolation': true,
+
     'scss/dollar-variable-pattern': KEBAB_CASE_PATTERN,
     'scss/double-slash-comment-whitespace-inside': 'always',
     'scss/function-color-relative': true,
@@ -54,6 +55,7 @@ module.exports = {
     'scss/no-duplicate-dollar-variables': true,
     'scss/no-duplicate-mixins': true,
     'scss/no-global-function-names': null,
+    'scss/operator-no-newline-after': null,
     'scss/operator-no-unspaced': true,
     'scss/percent-placeholder-pattern': KEBAB_CASE_PATTERN,
     'scss/selector-nest-combinators': 'always',
