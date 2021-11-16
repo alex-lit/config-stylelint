@@ -1,3 +1,5 @@
+## [12.0.1](https://github.com/alex-lit/config-stylelint/compare/v12.0.0...v12.0.1) (2021-11-16)
+
 # 12.0.0 (2021-11-16)
 
 ### Bug Fixes
