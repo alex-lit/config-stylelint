@@ -168,7 +168,7 @@ header {
   transition-duration: 0s;
   user-select: none;
 
-  @supports {
+  @supports (width: 0) {
   }
 
   &:hover,

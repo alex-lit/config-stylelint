@@ -7,7 +7,10 @@ module.exports = {
 
   rules: {
     'csstree/validator': {
-      ignore: ['v-deep', 'v-global', 'v-slotted'],
+      // eslint-disable-next-line spellcheck/spell-checker
+      ignoreAtrules: ['media', 'else'],
+
+      ignoreProperties: ['v-deep', 'v-global', 'v-slotted'],
 
       ignoreValue: /^(clamp|color|map|math|max|min|quote|unquote|v-bind)/,
 
