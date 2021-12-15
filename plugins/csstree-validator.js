@@ -15,6 +15,8 @@ module.exports = {
         'content-visibility': 'visible | auto | hidden', // webkit
         'font-display': 'auto | block | swap | fallback | optional', // experimental
       },
+
+      syntaxExtensions: ['sass', 'less'],
     },
   },
 };
