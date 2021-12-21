@@ -10,6 +10,7 @@ module.exports = {
   plugins: ['stylelint-scss'],
 
   rules: {
+    'scss/at-each-key-value-single-line': true,
     'scss/at-else-if-parentheses-space-before': 'always',
     'scss/at-extend-no-missing-placeholder': true,
     'scss/at-function-pattern': KEBAB_CASE_PATTERN,
@@ -22,6 +23,7 @@ module.exports = {
     'scss/at-mixin-pattern': KEBAB_CASE_PATTERN,
     'scss/at-rule-conditional-no-parentheses': true,
     'scss/at-rule-no-unknown': [true, { ignoreAtRules: ['container'] }],
+    'scss/at-use-no-unnamespaced': true,
     'scss/comment-no-empty': true,
     'scss/comment-no-loud': null,
     'scss/declaration-nested-properties': 'never',
@@ -45,7 +47,7 @@ module.exports = {
     ],
 
     'scss/dollar-variable-no-missing-interpolation': true,
-
+    'scss/dollar-variable-no-namespaced-assignment': true,
     'scss/dollar-variable-pattern': KEBAB_CASE_PATTERN,
     'scss/double-slash-comment-whitespace-inside': 'always',
     'scss/function-color-relative': true,
