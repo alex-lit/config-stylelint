@@ -1,4 +1,3 @@
-/* eslint-disable unicorn/no-null */
 /**
  * @see [stylelint-order](https://github.com/hudochenkov/stylelint-order)
  */
@@ -7,100 +6,26 @@ module.exports = {
 
   rules: {
     'order/order': [
-      /**
-       * SASS variables
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     $color: red;
-       *   }
-       *   ```;
-       */
+      // SASS variables
       'dollar-variables',
 
-      /**
-       * LESS variables
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     @color: red;
-       *   }
-       *   ```;
-       */
+      // LESS variables
       'at-variables',
 
-      /**
-       * SASS extend
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     @extend .custom-class;
-       *   }
-       *   ```;
-       */
+      // SASS extends
       { name: 'extend', type: 'at-rule' },
 
-      /**
-       * SASS include
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     @include mixins;
-       *   }
-       *   ```;
-       */
+      // SASS includes
       { name: 'include', type: 'at-rule' },
 
-      /**
-       * Tailwind apply
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     @apply z-50 z-10 container text-left md:text-center justify-center;
-       *   }
-       *   ```;
-       */
+      // Tailwind applies
       { name: 'apply', type: 'at-rule' },
 
-      /**
-       * CSS
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     --color: red;
-       *   }
-       *   ```;
-       */
+      // CSS custom properties
       'custom-properties',
 
-      /**
-       * Declarations
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     color: red;
-       *   }
-       *   ```;
-       */
+      // Declarations
       'declarations',
-
-      /**
-       * At rules
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     @media screen and (max-width: 992px) {}
-       *   }
-       *   ```;
-       */
 
       // Root
       { name: 'at-root', type: 'at-rule' }, // sass
@@ -120,7 +45,7 @@ module.exports = {
       { name: 'media', parameter: 'mobile-s', type: 'at-rule' },
       { name: 'media', parameter: 'mobile', type: 'at-rule' },
 
-      // Default breakpoints (bootstrap like)
+      // Bootstrap breakpoints
       { name: 'media', parameter: 'xxl', type: 'at-rule' },
       { name: 'media', parameter: 'xl', type: 'at-rule' },
       { name: 'media', parameter: 'lg', type: 'at-rule' },
@@ -150,19 +75,8 @@ module.exports = {
       { name: 'styleset', type: 'at-rule' },
       { name: 'character-variant', type: 'at-rule' },
 
-      // Other at-rules
       'at-rules',
 
-      /**
-       * Properties
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     &:empty {}
-       *   }
-       *   ```;
-       */
       // Linguistic pseudo-classes
       { selector: ':dir', type: 'rule' },
       { selector: ':lang', type: 'rule' },
@@ -224,7 +138,7 @@ module.exports = {
       { selector: ':last-of-type', type: 'rule' },
       { selector: ':only-of-type', type: 'rule' },
 
-      // Other
+      // Other pseudo-classes
       { selector: ':any', type: 'rule' },
       { selector: ':defined', type: 'rule' },
       { selector: ':first', type: 'rule' },
@@ -239,17 +153,7 @@ module.exports = {
       { selector: ':right', type: 'rule' },
       { selector: ':where', type: 'rule' },
 
-      /**
-       * Pseudo elements
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     &::before {}
-       *   }
-       *   ```;
-       */
-      // Elements
+      // Pseudo elements
       { selector: '::before', type: 'rule' },
       { selector: '::after', type: 'rule' },
 
@@ -286,22 +190,10 @@ module.exports = {
       // Deep
       { selector: '::v-deep', type: 'rule' },
 
-      // Other
       { selector: '::', type: 'rule' },
 
-      /**
-       * Selector list
-       */
+      // Selector list
       { selector: ',', type: 'rule' },
-
-      /**
-       * Basic selectors
-       *
-       * @example
-       *   ```scss
-       *   .my-component {}
-       *   ```;
-       */
 
       // Class selector
       { selector: /\.a/, type: 'rule' },
@@ -507,17 +399,6 @@ module.exports = {
       { selector: /\[width/, type: 'rule' },
       { selector: /\[/, type: 'rule' },
 
-      /**
-       * Combinators
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     + a {}
-       *   }
-       *   ```;
-       */
-
       // Adjacent sibling combinator
       { selector: /\+/, type: 'rule' },
 
@@ -530,20 +411,10 @@ module.exports = {
       // Column combinator
       { selector: /\|\|/, type: 'rule' },
 
-      // Other
+      // Other combinators
       'rules',
 
-      /**
-       * BEM class
-       *
-       * @example
-       *   ```scss
-       *   .my-component {
-       *     &__element {}
-       *     &--modifier {}
-       *   }
-       *   ```;
-       */
+      // BEM class
       { selector: /__a/, type: 'rule' },
       { selector: /__b/, type: 'rule' },
       { selector: /__c/, type: 'rule' },
