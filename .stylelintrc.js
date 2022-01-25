@@ -122,6 +122,9 @@ module.exports = {
     'shorthand-property-no-redundant-values': true,
     'string-no-newline': null,
     'time-min-milliseconds': 16,
+
+    'value-keyword-case': ['lower', { camelCaseSvgKeywords: true }],
+
     'value-no-vendor-prefix': true,
   },
 };
