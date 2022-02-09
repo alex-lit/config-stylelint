@@ -38,13 +38,13 @@
     "version": "./node_modules/@alexlit/lint-kit/scripts/version.sh"
   },
   "dependencies": {
-    "stylelint": "^14.3.0",
+    "stylelint": "^14.4.0",
     "stylelint-a11y": "^1.2.3",
     "stylelint-at-rule-no-children": "^0.3.1",
     "stylelint-color-format": "^1.1.0",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-recommended-vue": "^1.1.0",
-    "stylelint-config-standard": "^24.0.0",
+    "stylelint-config-recommended-vue": "^1.2.0",
+    "stylelint-config-standard": "^25.0.0",
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-csstree-validator": "^2.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
