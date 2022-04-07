@@ -65,6 +65,7 @@ module.exports = {
     'custom-property-pattern': '^[a-z]+(-{1,2}[a-z]+)*$',
     'declaration-block-no-redundant-longhand-properties': null,
     'font-family-name-quotes': 'always-unless-keyword',
+    'function-no-unknown': null, // delegate to scss/function-no-unknown
     'function-url-quotes': 'always',
     'function-url-scheme-disallowed-list': ['/^data/', 'ftp', '/^http/'],
     'hue-degree-notation': 'angle',
@@ -79,7 +80,6 @@ module.exports = {
     ],
 
     'media-feature-name-no-unknown': [true, { ignoreMediaFeatureNames: [] }],
-
     'media-feature-name-no-vendor-prefix': true,
     'no-descending-specificity': null,
     'no-empty-source': null,

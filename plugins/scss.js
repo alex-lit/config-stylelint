@@ -51,6 +51,7 @@ module.exports = {
     'scss/dollar-variable-pattern': KEBAB_CASE_PATTERN,
     'scss/double-slash-comment-whitespace-inside': 'always',
     'scss/function-color-relative': true,
+    'scss/function-no-unknown': [true, { ignoreFunctions: ['v-bind'] }],
     'scss/function-quote-no-quoted-strings-inside': true,
     'scss/function-unquote-no-unquoted-strings-inside': true,
     'scss/map-keys-quotes': 'always',
