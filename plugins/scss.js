@@ -22,7 +22,21 @@ module.exports = {
     'scss/at-mixin-parentheses-space-before': 'never',
     'scss/at-mixin-pattern': KEBAB_CASE_PATTERN,
     'scss/at-rule-conditional-no-parentheses': true,
-    'scss/at-rule-no-unknown': [true, { ignoreAtRules: ['container'] }],
+
+    'scss/at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: [
+          'apply',
+          'container',
+          'responsive',
+          'screen',
+          'tailwind',
+          'variants',
+        ],
+      },
+    ],
+
     'scss/at-use-no-unnamespaced': true,
     'scss/comment-no-empty': true,
     'scss/comment-no-loud': null,

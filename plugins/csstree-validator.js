@@ -8,7 +8,15 @@ module.exports = {
   rules: {
     'csstree/validator': {
       // eslint-disable-next-line spellcheck/spell-checker
-      ignoreAtrules: ['media', 'else'],
+      ignoreAtrules: [
+        'apply',
+        'else',
+        'media',
+        'responsive',
+        'screen',
+        'tailwind',
+        'variants',
+      ],
 
       ignoreProperties: ['v-deep', 'v-global', 'v-slotted'],
 

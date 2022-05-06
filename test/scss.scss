@@ -6,6 +6,8 @@ $font-weights: (
 
 @import 'logical.scss';
 
+@tailwind utility;
+
 @use 'sass:map';
 @use 'sass:color';
 
@@ -15,6 +17,10 @@ $font-weights: (
 
 .example {
   color: rgb(0 0 0);
+
+  @screen sm {
+    color: rebeccapurple;
+  }
 
   @media ($laptop) {
     grid-template-columns: 1fr;
@@ -142,6 +148,11 @@ header {
   @include ddf();
   @include ddf();
   @include ddf();
+
+  @apply ddd ring-cyan-500 
+  transition-all duration-500 
+     demo-dark:ring-cyan-400
+         ring-2 absolute left-1/2 top-1/2 w-4 h-4 -mt-2 -ml-2 flex items-center justify-center bg-white rounded-full shadow red-500 bg-red-200;
 
   align-items: center;
   appearance: none;

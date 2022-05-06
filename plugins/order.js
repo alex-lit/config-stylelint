@@ -34,6 +34,13 @@ module.exports = {
       // Bootstrap media mixins
       { name: 'include', parameter: 'media', type: 'at-rule' },
 
+      // Tailwind breakpoints
+      { name: 'screen', parameter: '2xl', type: 'at-rule' },
+      { name: 'screen', parameter: 'xl', type: 'at-rule' },
+      { name: 'screen', parameter: 'lg', type: 'at-rule' },
+      { name: 'screen', parameter: 'md', type: 'at-rule' },
+      { name: 'screen', parameter: 'sm', type: 'at-rule' },
+
       // Chrome breakpoints
       { name: 'media', parameter: 'laptop-4k', type: 'at-rule' },
       { name: 'media', parameter: 'laptop-xl', type: 'at-rule' },
@@ -55,6 +62,7 @@ module.exports = {
       { name: 'media', parameter: 'xxs', type: 'at-rule' },
 
       { name: 'media', type: 'at-rule' },
+
       { name: 'container', type: 'at-rule' },
       { name: 'supports', type: 'at-rule' },
       { name: 'document', type: 'at-rule' },
