@@ -1,3 +1,5 @@
+## [15.6.3](https://github.com/alex-lit/config-stylelint/compare/v15.6.2...v15.6.3) (2022-05-25)
+
 ## [15.6.2](https://github.com/alex-lit/config-stylelint/compare/v15.6.1...v15.6.2) (2022-05-20)
 
 ## [15.6.1](https://github.com/alex-lit/config-stylelint/compare/v15.6.0...v15.6.1) (2022-05-06)
