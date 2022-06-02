@@ -58,7 +58,7 @@
     "stylelint-prettier": "^2.0.0",
     "stylelint-scss": "^4.2.0",
     "stylelint-selector-no-empty": "^1.0.8",
-    "stylelint-use-logical-spec": "^3.2.2",
+    "stylelint-use-logical-spec": "^4.0.0",
     "stylelint-use-nesting": "^3.0.0"
   },
   "devDependencies": {
