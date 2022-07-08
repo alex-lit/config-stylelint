@@ -55,10 +55,10 @@ a {
 }
 
 .ui-button {
-  $box-shadow: 0 0 0 1px rgb(91 157 217), 0 0 2px 1px rgb(30 140 190 / 0.8);
-  $xxx: 0 0 0 1px rgb(91 157 217), 0 0 2px 1px rgb(30 140 190 / 0.8);
-  $yyy: 0 0 0 1px rgb(91 157 217), 0 0 2px 1px rgb(30 140 190 / 0.8);
-  $zzz: 0 0 0 1px rgb(91 157 217), 0 0 2px 1px rgb(30 140 190 / 0.8);
+  // $box-shadow: 0 0 0 1px rgb(91 157 217), 0 0 2px 1px rgb(30 140 190 / 0.8);
+  // $xxx: 0 0 0 1px rgb(91 157 217), 0 0 2px 1px rgb(30 140 190 / 0.8);
+  // $yyy: 0 0 0 1px rgb(91 157 217), 0 0 2px 1px rgb(30 140 190 / 0.8);
+  // $zzz: 0 0 0 1px rgb(91 157 217), 0 0 2px 1px rgb(30 140 190 / 0.8);
 
   @include variables();
 
@@ -90,7 +90,7 @@ a {
   text-decoration: none;
   transition-duration: 0.1s;
   user-select: none;
-  width: max(200px, 100%); /* stylelint-disable-line */
+  width: max(200px, 100%);
   width: clamp(100px, 20vw, 208px);
 
   &:hover {
