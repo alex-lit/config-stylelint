@@ -1,3 +1,10 @@
+## [18.0.2](https://github.com/alex-lit/config-stylelint/compare/v18.0.1...v18.0.2) (2022-07-08)
+
+### Bug Fixes
+
+- add missing dependencies
+  ([e6e955f](https://github.com/alex-lit/config-stylelint/commit/e6e955f0d54c0886ed942581716936570a7731a4))
+
 ## [18.0.1](https://github.com/alex-lit/config-stylelint/compare/v18.0.0...v18.0.1) (2022-06-20)
 
 # [18.0.0](https://github.com/alex-lit/config-stylelint/compare/v17.1.0...v18.0.0) (2022-06-14)
