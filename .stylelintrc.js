@@ -21,6 +21,7 @@ module.exports = {
       './plugins/prettier',
 
       // optional
+      // './plugins/gamut',
       // './plugins/no-indistinguishable-colors',
       // './plugins/optional/use-logical-spec',
     ].map((config) => require.resolve(config)),
@@ -37,6 +38,7 @@ module.exports = {
 
   rules: {
     'alpha-value-notation': 'number',
+    'annotation-no-unknown': [true, { ignoreAnnotations: ['default'] }],
     'at-rule-disallowed-list': ['debug'],
 
     'at-rule-empty-line-before': [

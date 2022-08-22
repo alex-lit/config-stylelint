@@ -20,7 +20,8 @@ module.exports = {
 
       ignoreProperties: ['v-deep', 'v-global', 'v-slotted'],
 
-      ignoreValue: /^(clamp|color|map|math|max|min|quote|unquote|v-bind)/,
+      ignoreValue:
+        /^(clamp|color|map|math|max|min|quote|unquote|v-bind|lch|oklch|lab|oklab)/,
 
       properties: {
         'content-visibility': 'visible | auto | hidden', // webkit
