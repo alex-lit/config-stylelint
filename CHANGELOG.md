@@ -1,3 +1,5 @@
+# [24.0.0](https://github.com/alex-lit/config-stylelint/compare/v22.0.0...v24.0.0) (2022-08-22)
+
 # [22.0.0](https://github.com/alex-lit/config-stylelint/compare/v21.0.0...v22.0.0) (2022-08-22)
 
 # [21.0.0](https://github.com/alex-lit/config-stylelint/compare/v20.0.2...v21.0.0) (2022-08-16)
