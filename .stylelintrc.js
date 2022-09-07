@@ -64,7 +64,7 @@ module.exports = {
       },
     ],
 
-    'custom-property-pattern': '^[a-z]+([a-z0-9-]+[a-z0-9]+)?$',
+    'custom-property-pattern': '^_?[a-z]+([a-z0-9-]+[a-z0-9]+)?$',
     'declaration-block-no-redundant-longhand-properties': null,
     'font-family-name-quotes': 'always-unless-keyword',
     'function-no-unknown': null, // delegate to scss/function-no-unknown
