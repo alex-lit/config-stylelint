@@ -10,6 +10,7 @@ module.exports = {
       // eslint-disable-next-line spellcheck/spell-checker
       ignoreAtrules: [
         'apply',
+        'custom-media',
         'else',
         'media',
         'responsive',
