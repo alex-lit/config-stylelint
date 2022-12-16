@@ -1,3 +1,5 @@
+## [27.5.1](https://github.com/alex-lit/config-stylelint/compare/v27.5.0...v27.5.1) (2022-12-16)
+
 # [27.5.0](https://github.com/alex-lit/config-stylelint/compare/v27.4.0...v27.5.0) (2022-12-09)
 
 # [27.4.0](https://github.com/alex-lit/config-stylelint/compare/v27.3.0...v27.4.0) (2022-12-04)
