@@ -66,6 +66,7 @@ module.exports = {
 
     'custom-property-pattern': '^_?[a-z]+([a-z0-9-]+[a-z0-9]+)?$',
     'declaration-block-no-redundant-longhand-properties': null,
+    'declaration-property-value-no-unknown': true,
     'font-family-name-quotes': 'always-unless-keyword',
     'function-no-unknown': null, // delegate to scss/function-no-unknown
     'function-url-quotes': 'always',
@@ -88,7 +89,7 @@ module.exports = {
     'no-missing-end-of-source-newline': null,
     'no-unknown-animations': true,
     'number-max-precision': 3,
-    'property-no-unknown': [true, { ignoreProperties: [] }],
+    'property-no-unknown': [true, { ignoreProperties: ['align-tracks'] }],
     'property-no-vendor-prefix': true,
 
     'rule-empty-line-before': [
@@ -125,7 +126,10 @@ module.exports = {
     'string-no-newline': null,
     'time-min-milliseconds': 16,
 
-    'value-keyword-case': ['lower', { camelCaseSvgKeywords: true }],
+    'value-keyword-case': [
+      'lower',
+      { camelCaseSvgKeywords: true, ignoreFunctions: ['v-bind'] },
+    ],
 
     'value-no-vendor-prefix': true,
   },
