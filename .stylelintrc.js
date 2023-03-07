@@ -6,7 +6,6 @@ module.exports = {
       './plugins/a11y',
       './plugins/at-rule-no-children',
       './plugins/color-format',
-      './plugins/csstree-validator',
       './plugins/declaration-block-no-ignored-properties',
       './plugins/high-performance-animation',
       './plugins/no-nested-media',
