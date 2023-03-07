@@ -1,8 +1,8 @@
 /**
- * @see [stylelint-a11y](https://github.com/YozhikM/stylelint-a11y)
+ * @see [stylelint-a11y](https://github.com/double-great/stylelint-a11y)
  */
 module.exports = {
-  plugins: ['stylelint-a11y'],
+  plugins: ['@double-great/stylelint-a11y'],
 
   rules: {
     'a11y/media-prefers-reduced-motion': true,

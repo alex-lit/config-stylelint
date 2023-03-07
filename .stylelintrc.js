@@ -6,7 +6,6 @@ module.exports = {
       './plugins/a11y',
       './plugins/at-rule-no-children',
       './plugins/color-format',
-      './plugins/csstree-validator',
       './plugins/declaration-block-no-ignored-properties',
       './plugins/high-performance-animation',
       './plugins/no-nested-media',
@@ -50,6 +49,7 @@ module.exports = {
     ],
 
     'at-rule-no-unknown': null,
+
     'at-rule-no-vendor-prefix': true,
     'block-no-empty': null,
     'color-function-notation': 'modern',
@@ -65,7 +65,9 @@ module.exports = {
     ],
 
     'custom-property-pattern': '^_?[a-z]+([a-z0-9-]+[a-z0-9]+)?$',
+
     'declaration-block-no-redundant-longhand-properties': null,
+    'declaration-property-value-no-unknown': true,
     'font-family-name-quotes': 'always-unless-keyword',
     'function-no-unknown': null, // delegate to scss/function-no-unknown
     'function-url-quotes': 'always',
