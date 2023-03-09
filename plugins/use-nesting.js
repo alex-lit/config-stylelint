@@ -5,6 +5,6 @@ module.exports = {
   plugins: ['stylelint-use-nesting'],
 
   rules: {
-    'csstools/use-nesting': ['always', { except: [] }],
+    'csstools/use-nesting': ['always', { except: [], syntax: 'scss' }],
   },
 };
