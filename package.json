@@ -1,6 +1,6 @@
 {
   "name": "@alexlit/config-stylelint",
-  "version": "30.0.3",
+  "version": "30.1.0",
   "private": false,
   "description": "Stylelint config",
   "keywords": [
