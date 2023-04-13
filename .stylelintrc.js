@@ -22,6 +22,7 @@ module.exports = {
       // optional
       // './plugins/gamut',
       // './plugins/no-indistinguishable-colors',
+      // './plugins/optional/logical-css',
       // './plugins/optional/use-logical-spec',
     ].map((config) => require.resolve(config)),
   ],
