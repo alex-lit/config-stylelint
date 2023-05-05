@@ -42,7 +42,7 @@
     "postcss": "^8.4.23",
     "postcss-html": "^1.5.0",
     "prettier": "^2.8.8",
-    "stylelint": "^15.6.0",
+    "stylelint": "^15.6.1",
     "stylelint-at-rule-no-children": "^0.3.1",
     "stylelint-color-format": "^1.1.0",
     "stylelint-config-recommended-vue": "^1.4.0",
@@ -58,7 +58,7 @@
     "stylelint-order": "^6.0.3",
     "stylelint-plugin-logical-css": "^0.9.1",
     "stylelint-prettier": "^3.0.0",
-    "stylelint-scss": "^4.6.0",
+    "stylelint-scss": "^5.0.0",
     "stylelint-selector-no-empty": "^1.0.9",
     "stylelint-use-logical-spec": "^5.0.0",
     "stylelint-use-nesting": "^4.1.0"
