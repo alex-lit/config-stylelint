@@ -41,6 +41,7 @@
     "@double-great/stylelint-a11y": "^2.0.2",
     "postcss": "^8.4.25",
     "postcss-html": "^1.5.0",
+    "prettier": "^2.8.8",
     "stylelint": "^15.10.1",
     "stylelint-at-rule-no-children": "^0.3.1",
     "stylelint-color-format": "^1.1.0",
