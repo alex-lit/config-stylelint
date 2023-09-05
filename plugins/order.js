@@ -24,6 +24,9 @@ module.exports = {
       // CSS custom properties
       'custom-properties',
 
+      // SASS aliases
+      { selector: '%', type: 'rule' },
+
       // Declarations
       'declarations',
 
