@@ -1,3 +1,5 @@
+# [37.0.0](https://github.com/alex-lit/config-stylelint/compare/v36.2.1...v37.0.0) (2023-09-05)
+
 ## [36.2.1](https://github.com/alex-lit/config-stylelint/compare/v36.2.0...v36.2.1) (2023-08-24)
 
 # [36.2.0](https://github.com/alex-lit/config-stylelint/compare/v36.1.0...v36.2.0) (2023-08-24)
